@@ -1,0 +1,200 @@
+\documentclass[11pt]{article}
+\usepackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
+\usepackage{helvet}
+\usepackage{url} % hypderref?
+\usepackage{graphicx}
+\graphicspath{{figures/}} % The figures are in a figures/ subdirectory.
+\renewcommand{\familydefault}{\sfdefault}
+\pagestyle{empty}
+%\pagestyle{plain}
+
+\usepackage{setspace}
+\usepackage{microtype}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\usepackage{sidecap}
+\usepackage[abs]{overpic}
+\usepackage{wrapfig}
+
+%\usepackage[round,authoryear]{natbib}
+\usepackage{cite}
+%\setlength{\bibsep}{0.00in}
+
+%\usepackage{hyperref}
+%\hypersetup{colorlinks=true, urlcolor=black, citecolor=black, linkcolor=black}
+
+\usepackage[numbers,sort&compress]{natbib}
+
+\newcommand{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
+
+\newcommand{\ac}[1]{{\sc \lowercase{#1}}}
+
+\renewcommand{\baselinestretch}{.93}
+%\renewcommand{\baselinestretch}{.90}
+\usepackage{wrapfig} 
+
+\usepackage{bibspacing}
+\setlength{\bibspacing}{\baselineskip}
+\usepackage{bibentry}
+%\usepackage{multibib}
+%\newcites{sampl}{Full List of SAMPL References}
+
+
+\graphicspath{{figs/}}
+
+\makeatletter
+
+\newcommand{\captionfonts}{\footnotesize}
+
+\makeatletter  % Allow the use of @ in command names
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{{\captionfonts #1: #2}}%
+  \ifdim \wd\@tempboxa >\hsize
+    {\captionfonts #1. #2\par}
+  \else
+    \hbox to\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}      
+\makeatother
+
+\renewcommand{\figurename}{Fig.}
+
+% Page numbering.
+%\pagestyle{plain}
+%\pagenumbering{arabic}
+
+\setlength{\abovecaptionskip}{-5pt}
+
+\makeatother
+
+\renewcommand{\refname}{Bibliography and References Cited}
+
+\setlength{\parindent}{0pt} % Don't indent first line
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex} % Add some space between paragraphs
+
+\begin{document}
+
+%======================================
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% INTRODUCTION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%RESUBMISSION APPLICATIONS MUST INCLUDE AN INTRODUCTION
+%You must include an introduction for all resubmission that:
+% - summarizes substantial additions, deletions, and changes to the application
+%    - individual changes do not need to be identified within other application attachments (e.g., do not need to bold or italicize changes in Research Strategy)
+% - responds to the issues and criticism raised in the summary statement
+% - is one page or less in length, unless specified otherwise in the FOA or is specified differently on our table of page limits.
+
+\begin{centering}
+{\bf INTRODUCTION}
+\end{centering}
+
+% Three biggest criticisms:
+% - we're not innovating
+%Overall, reviewers had several main points of criticism, 
+
+Our revised proposal addresses all of the feedback provided by prior reviewers, and also incorporates enhancements suggested by a survey of the modeling community, which was overall extremely enthusiastic about our plans.
+The most profound criticism of our original proposal was that we did not propose new methodology development and instead focused on fielding blind Challenges to enable other groups to innovate, assess, and cross-evaluate new methodologies.
+Reviewers concluded, ``as such, the overall impact \ldots is expected to be limited and would rely largely on others to make progress.''
+Indeed, we seek to drive methods development widely in the field, rather than to use the collected data solely to advance our own methods development efforts.
+In fact, the SAMPL Challenges build on a \emph{proven} model leveraging this format to motivate rapid community progress: this model has not only been shown to drive progress in computational biology by the CASP~\cite{Moult:2014:Proteins, Monastyrskyy:2016:Proteins, Moult:2016:Proteins} and DREAM~\cite{Prill:2011:Sci.Signal., Eisenstein:2013:NatBiotech, Saez-Rodriguez:2016:NatRevGenet} Challenges, but also in machine learning by the Netflix Prize~\cite{Bell:2010:CHANCE} and innovation in general by the XPrize approach~\cite{::XPRIZE, Kay:2011:R&DManage, XPrize:2017:Wikipedia}. 
+We now include a discussion of how this model of ``crowdsourcing for innovation'' has achieved widespread success in diverse fields~\cite{Kay:2011:R&DManage, Saez-Rodriguez:2016:NatRevGenet} and is known to foster much more innovation than having groups work independently on their own problems~\cite{Bell:2010:CHANCE, Kay:2011:R&DManage, Saez-Rodriguez:2016:NatRevGenet}.
+With 100 papers arising from previous unfunded iterations of SAMPL, we have also proven the ability of SAMPL to drive innovation~[1-100];
+%I can't figure out how to get multibib to work properly with bibentry (which is needed for the "nobibliography" command at the end which introduces the references here without putting a bibliography) so I'm entering the reference range manually.
+%~\citesampl{monroe_converging_2014_sampl,muddana_blind_2014_sampl,gallicchio_bedam_2015-1_sampl,mikulskis_free-energy_2014_sampl,hsiao_prediction_2014_sampl,bhakat_resolving_2016_sampl,pal_combined_2016_sampl,yin_sampl5_2016_sampl,bosisio_blinded_2016_sampl,tofoleanu_absolute_2016_sampl,mobley_blind_2014-1_sampl,muddana_sampl4_2014_sampl,sullivan_binding_2016_sampl,deng_distinguishing_2015_sampl,li_testing_2014_sampl,paranahewage_predicting_2016_sampl,klamt_prediction_2016_sampl,tielker_sampl5_2016_sampl,konig_calculating_2016_sampl,luchko_sampl5:_2016_sampl,santos-martins_calculation_2016_sampl,perryman_virtual_2014_sampl,konig_predicting_2014_sampl,voet_combining_2014_sampl,park_extended_2014_sampl,rustenburg_measuring_2016_sampl,reinisch_prediction_2014_sampl,muddana_sampl4_2014-1_sampl,manzoni_prediction_2014_sampl,sandberg_predicting_2014_sampl,brini_adapting_2016_sampl,kamath_prediction_2016_sampl,diaz-rodriguez_predicting_2016_sampl,kenney_prediction_2016_sampl,caldararu_binding_2016_sampl,genheden_all-atom/coarse-grained_2016_sampl,chung_extended_2016_sampl,koziara_testing_2014_sampl,yin_overview_2016_sampl,Bannan:2016:JComputAidedMolDes_sampl,Lee:2016:JComputAidedMolDes_sampl,Jones:2016:JComputAidedMolDes_sampl,Pickard:2016:JComputAidedMolDes_sampl, cao_absolute_2014_sampl,muddana_prediction_2012_sampl,gibb_binding_2013_sampl,klimovich_predicting_2010_sampl,mobley_alchemical_2012_sampl,muddana_sampl3_2012_sampl,skillman_sampl3_2012_sampl,Newman:2011:JComputAidedMolDes_sampl,gallicchio_virtual_2014_sampl,klamt_blind_2010_sampl,fennell_modeling_2011_sampl,ellingson_analysis_2010_sampl,surpateanu_evaluation_2011_sampl,purisima_rapid_2010_sampl,konig_predicting_2011_sampl,kehoe_testing_2011_sampl,kumar_computational_2012_sampl,meunier_predictions_2010_sampl,genheden_extensive_2014_sampl,beckstein_prediction_2014_sampl,coleman_sampl4_2014_sampl,hogues_exhaustive_2014_sampl,reinisch_prediction_2012_sampl,kulp_fragment-based_2012_sampl,klamt_conclusions_2010_sampl,fu_fast_2014_sampl,hamaguchi_force-field_2012_sampl,colas_virtual_2014_sampl,ellingson_efficient_2014_sampl,sulea_predicting_2011_sampl,geballe_sampl2_2010_sampl,ribeiro_prediction_2010_sampl,skillman_sampl2_2010_sampl,gallicchio_prediction_2012_sampl,mikulskis_binding_2011_sampl,geballe_sampl3_2012_sampl,guthrie_sampl4_2014_sampl,nicholls_sampl2_2010_sampl,soteras_performance_2010_sampl,lawrenz_thermodynamic_2012_sampl,sulea_exhaustive_2011_sampl,beckstein_prediction_2011_sampl,benson_prediction_2012_sampl,kast_prediction_2010_sampl,mobley_predictions_2009_sampl,newman_practical_2009_sampl,klamt_prediction_2009_sampl,guthrie_blind_2009_sampl,marenich_performance_2009_sampl,sulea_prediction_2009_sampl,nicholls_samp1_2009_sampl,nicholls_predicting_2008_sampl,chamberlin_performance_2008_sampl,Gosink:2017:J.Phys.Chem.B_sampl, Yang:2017:arXiv:1705.10035[q-bio]_sampl, shirts_lessons_2016_sampl, Bansal:2017:JComputAidedMolDes_sampl};
+NIH funding will greatly amplify this impact. 
+
+To further support SAMPL's impact, we surveyed the biomolecular simulation \emph{community}, with results available online~\cite{Mobley:2017:eScholarship}, and we also include testimonials from several past participants highlighting different ways in which SAMPL has directly impacted method development.
+Collectively, SAMPL's publication record~[1-100],
+%~\citesampl{monroe_converging_2014_sampl,muddana_blind_2014_sampl,gallicchio_bedam_2015-1_sampl,mikulskis_free-energy_2014_sampl,hsiao_prediction_2014_sampl,bhakat_resolving_2016_sampl,pal_combined_2016_sampl,yin_sampl5_2016_sampl,bosisio_blinded_2016_sampl,tofoleanu_absolute_2016_sampl,mobley_blind_2014-1_sampl,muddana_sampl4_2014_sampl,sullivan_binding_2016_sampl,deng_distinguishing_2015_sampl,li_testing_2014_sampl,paranahewage_predicting_2016_sampl,klamt_prediction_2016_sampl,tielker_sampl5_2016_sampl,konig_calculating_2016_sampl,luchko_sampl5:_2016_sampl,santos-martins_calculation_2016_sampl,perryman_virtual_2014_sampl,konig_predicting_2014_sampl,voet_combining_2014_sampl,park_extended_2014_sampl,rustenburg_measuring_2016_sampl,reinisch_prediction_2014_sampl,muddana_sampl4_2014-1_sampl,manzoni_prediction_2014_sampl,sandberg_predicting_2014_sampl,brini_adapting_2016_sampl,kamath_prediction_2016_sampl,diaz-rodriguez_predicting_2016_sampl,kenney_prediction_2016_sampl,caldararu_binding_2016_sampl,genheden_all-atom/coarse-grained_2016_sampl,chung_extended_2016_sampl,koziara_testing_2014_sampl,yin_overview_2016_sampl,Bannan:2016:JComputAidedMolDes_sampl,Lee:2016:JComputAidedMolDes_sampl,Jones:2016:JComputAidedMolDes_sampl,Pickard:2016:JComputAidedMolDes_sampl, cao_absolute_2014_sampl,muddana_prediction_2012_sampl,gibb_binding_2013_sampl,klimovich_predicting_2010_sampl,mobley_alchemical_2012_sampl,muddana_sampl3_2012_sampl,skillman_sampl3_2012_sampl,Newman:2011:JComputAidedMolDes_sampl,gallicchio_virtual_2014_sampl,klamt_blind_2010_sampl,fennell_modeling_2011_sampl,ellingson_analysis_2010_sampl,surpateanu_evaluation_2011_sampl,purisima_rapid_2010_sampl,konig_predicting_2011_sampl,kehoe_testing_2011_sampl,kumar_computational_2012_sampl,meunier_predictions_2010_sampl,genheden_extensive_2014_sampl,beckstein_prediction_2014_sampl,coleman_sampl4_2014_sampl,hogues_exhaustive_2014_sampl,reinisch_prediction_2012_sampl,kulp_fragment-based_2012_sampl,klamt_conclusions_2010_sampl,fu_fast_2014_sampl,hamaguchi_force-field_2012_sampl,colas_virtual_2014_sampl,ellingson_efficient_2014_sampl,sulea_predicting_2011_sampl,geballe_sampl2_2010_sampl,ribeiro_prediction_2010_sampl,skillman_sampl2_2010_sampl,gallicchio_prediction_2012_sampl,mikulskis_binding_2011_sampl,geballe_sampl3_2012_sampl,guthrie_sampl4_2014_sampl,nicholls_sampl2_2010_sampl,soteras_performance_2010_sampl,lawrenz_thermodynamic_2012_sampl,sulea_exhaustive_2011_sampl,beckstein_prediction_2011_sampl,benson_prediction_2012_sampl,kast_prediction_2010_sampl,mobley_predictions_2009_sampl,newman_practical_2009_sampl,klamt_prediction_2009_sampl,guthrie_blind_2009_sampl,marenich_performance_2009_sampl,sulea_prediction_2009_sampl,nicholls_samp1_2009_sampl,nicholls_predicting_2008_sampl,chamberlin_performance_2008_sampl,Gosink:2017:J.Phys.Chem.B_sampl, Yang:2017:arXiv:1705.10035[q-bio]_sampl, shirts_lessons_2016_sampl, Bansal:2017:JComputAidedMolDes_sampl}, 
+community survey feedback~\cite{Mobley:2017:eScholarship}, and the attached testimonials provide overwhelming evidence supporting SAMPL's impact.
+
+% - it's not enough data for training on
+Aside from impact, reviewers were concerned that the data sets generated will not be large enough to provide a dramatically larger amount of training data for machine learning methods. 
+We fully agree: SAMPL is about \emph{evaluating} rather than \emph{training} methods.
+As with past crowdsourcing efforts, SAMPL focuses on providing a venue to find out what works and does not work in a blind predictive setting.
+Existing datasets may be adequate for training, but it is also easy to overfit or unintentionally apply bias when studying existing data, so blind challenges like this (as Reviewer 2 noted) are particularly important by allowing all methods (both highly empirical methods relying extensively on training to existing data and physical methods like those we tend to prefer) to compete on equal footing.
+We now make this more clear in the discussion on crowdsourcing in our Innovation section.
+
+% - it won't really advance the field
+Reviewers were also concerned that the real impact on the field would be minimal, in part because of the lack of methodological innovation.
+To address this, a variety of key leaders in the field have provided support letters highlighting specific ways in which SAMPL has helped advance their science already. 
+We also believe the 100 (typically well-cited) publications about the SAMPL series of challenges further support this point.
+
+% Discuss surveys of community
+To assist with this revision, we surveyed the SAMPL community regarding our plans~\cite{Mobley:2017:eScholarship}, and found overwhelming support. 
+Out of 44 respondents (each typically representing an individual group) 95\% saw SAMPL as a valuable resource to the community (with the remaining percentage seeing it as ``somewhat valuable'') and more than 90\% saw it as important in driving progress in the field (with no respondents seeing it as unimportant). 
+91\% are happy with the proposed future directions, and the remaining 9\% had modest suggestions for refinements which we have incorporated, such as modest increases in dataset sizes, additional experimental follow-up measurements to address lingering questions in discrepancies with theory, and eventually shifting to automated testing of methods. 
+Full survey results are available online~\cite{Mobley:2017:eScholarship}, and we can provide respondent identities and contact info if needed.
+
+The reviewers also critiqued the perceived lack of participation in SAMPL, noting that only 20 groups participated in the last cycle (SAMPL5). 
+We now address this in the proposal, but it is worth noting that the protein-ligand binding component of prior SAMPL Challenges was subsumed into D3R for SAMPL5, and despite this, overall participation \emph{continued to increase} relative to previous SAMPL iterations. 
+The 20 groups who participated include more than 100 co-authors all over the world, even without any significant publicity effort for the SAMPL Challenge and with ongoing uncertainty as to whether any future SAMPL Challenge will ever occur. 
+Without stable funding, it has always been uncertain whether we can cobble together new experimental data for another iteration of the Challenge and when this might occur, making it difficult to advertise and plan many cycles ahead. 
+
+Finally, the reviewers also objected that we have no clear connection with the SAMPL Challenge and that SAMPL's presence on the D3R website is not extensive. 
+We updated the D3R website to indicate the SAMPL organizers (including Mobley and Chodera), though having a substantial web presence is impaired by our lack of funding. 
+
+Overall, we hope the overwhelming community support for our plans, the specific examples we now give of how SAMPL drives innovation in the field, and the ample precedent for our ``crowdsourcing`` approach to science innovation (as we now discuss in the proposal), coupled to our enhancements to the proposal itself, demonstrate that SAMPL will indeed drive progress in the field even more than it already has. 
+
+% - Explain why appropriate for students (Reviewer 2 comment on budget)
+
+%Changes (to have been) made to proposal to deal with these:
+% - More detail on how experiments like those envisioned here have been more informative than existing datasets (Reviewer 2). Cite "lessons learned" from D3R challenges as an example versus lessons learned from SAMPL.
+% - Updates to proposal to refer to supporting documents (SAMPL survey) on how SAMPL does and will have significant impact on the field; updates to make more clear that this is a crowdsourcing model of sorts like those which have proven track record (and history of NIH funding?)
+% - Reviewer 3 - participants declining in SAMPL3. Analyze to show this is actually increase, even without advertising
+% - Reviewer 3 - existing data is adequate; this new data is not cost effective to generate. Make more clear data is needed not because it is better/more than existing data (though to some extent that may be true!) but because it's blind and because of the challenge nature (see crowdsourcing). See also Reviewer 2 point 3 "strengths" which says these datasets do not exist; also point 4 strengths 1. 
+% Reviewer 3 - better to have each lab work on their own targets separately? Reference bit from crowdsourcing review about how people are biased in evaluating own performance. (See also Reviewer 1)
+% Appropriateness for students
+% BASICALLY WE NEED A SPECIFIC BUT SHORT CROWDSOURCING SECTION IN PROPOSAL. Netflix prize, otehr examples... Llinas solubility challenge.
+
+% The main weaknesses identified were as follows:
+% Reviewer 1:
+% - Simple systems may be too simple. Algorithms trained here may not extrapolate well to protein-drug interactions
+% - Not listed as SAMPL committee on website
+% - Not described how algorithms trained on simpler datasets can be used to predict more complex datasets
+% - Not clear datasets are most relevant for drug design (mentions HSA, CB[n])
+% - D3R website has scanty info on SAMPL; only 20 groups participated
+
+% Reviewer 2: 
+% - "I am missing key intellectual components in THIS proposal that would have a high likelihood to improve methods (this would have to come out of the community participating in the prediction challenges). As such, the overall impact of this work specifically is expected to be limited and would rely largely on others to make progress." 
+% - "It is unclear what advances are likely as progress would come from others using the generated datasets to improve their methods."
+% - "There are no new methods proposed"
+% - "The main, but key, weakness is the lack of proposed methodological developments in this proposal."
+% - Wants removal of repetitive points and more specifics on existing datasets, how they have not been informative and how new experiments such as the ones envisioned here have been
+
+% Reviewer 3:
+% - "The need for the research is made in vague terms and largely appeals to the broad need for improving computational predictions. The proposal does not identify what specific weakness in current methods is being targeted, nor what is inadequate in the existing experimental data for some of the SAMPL areas, nor how adding to the current experimental databases would actually impact predictive algorithms or methods. The community interest in SAMPL seems to be a relatively small group of researchers."
+% - "needs a more specific explanation of why their efforts to add to existing data bases would have a significant impact on the field. It would require effort from other labs to actually realize a significant outcome." 
+% - "There are a large number of challenges and data repositories for pKa's, affinities, physical properties, and it is difficult to see how this proposal for SAMPL is cost effective"
+% - Questionable that community based engine will be effective at motivating innovative approaches.
+% - It is not clear how this is better than having each group work on their own stuff in their own labs on actual targets. 
+% - "Is there a real predictive algorithm where adding all of the host-guest affinities would make a difference?" 
+
+
+
+
+%======================================
+
+%\setlength{\bibsep}{0.000in}
+
+%\bibliographystyle{gec_nih}
+%\bibliographystyle{ieeetr}
+%\bibliographystyle{myrefstyle}
+%\bibliography{chodera-research}
+
+\bibliographystyle{nci}
+%\nobibliography{sampl}
+\nobibliography{sampl-r01}
+\end{document}
+
+
+
+
+
+

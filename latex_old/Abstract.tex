@@ -1,0 +1,139 @@
+\documentclass[11pt]{article}
+\usepackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
+\usepackage{helvet}
+\usepackage{url} % hypderref?
+\usepackage{graphicx}
+\graphicspath{{figures/}} % The figures are in a figures/ subdirectory.
+\renewcommand{\familydefault}{\sfdefault}
+\pagestyle{empty}
+%\pagestyle{plain}
+
+\usepackage{setspace}
+\usepackage{microtype}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\usepackage{sidecap}
+\usepackage[abs]{overpic}
+\usepackage{wrapfig}
+
+%\usepackage[round,authoryear]{natbib}
+\usepackage{cite}
+%\setlength{\bibsep}{0.00in}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=black, citecolor=black, linkcolor=black}
+
+\newcommand{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
+
+\newcommand{\ac}[1]{{\sc \lowercase{#1}}}
+
+\renewcommand{\baselinestretch}{.93}
+%\renewcommand{\baselinestretch}{.90}
+\usepackage{wrapfig} 
+
+\usepackage{bibspacing}
+\setlength{\bibspacing}{\baselineskip}
+
+
+\graphicspath{{figs/}}
+
+\makeatletter
+
+\newcommand{\captionfonts}{\footnotesize}
+
+\makeatletter  % Allow the use of @ in command names
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{{\captionfonts #1: #2}}%
+  \ifdim \wd\@tempboxa >\hsize
+    {\captionfonts #1. #2\par}
+  \else
+    \hbox to\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}      
+\makeatother
+
+\renewcommand{\figurename}{Fig.}
+
+% Page numbering.
+%\pagestyle{plain}
+%\pagenumbering{arabic}
+
+\setlength{\abovecaptionskip}{-5pt}
+
+\makeatother
+
+\renewcommand{\refname}{Bibliography and References Cited}
+
+\setlength{\parindent}{0pt} % Don't indent first line
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex} % Add some space between paragraphs
+
+\begin{document}
+
+%======================================
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROJECT SUMMARY / ABSTRACT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PROJECT SUMMARY/ABSTRACT
+%Project Summary: The purpose of the Project Summary/Abstract is to describe succinctly every major aspect of the proposed project. It should contain a statement of objectives and methods to be employed. Members of the Study Section who are not primary reviewers may rely heavily on the abstract to understand your application. Consider the significance and innovation of the research proposed when preparing the Project Summary.
+%The Project Summary must be no longer than 30 lines of text, and follow the required font and margin specifications.
+%The second component of the Project Summary is relevance of this research to public health. Use plain language that can be understood by a general, lay audience. The Project Summary should not contain proprietary confidential information.
+%The abstract should include:
+%? a brief background of the project;
+%? specific aims, objectives, or hypotheses;
+%? the significance of the proposed research and relevance to public health; ? the unique features and innovation of the project;
+%? the methodology (action steps) to be used;
+%? expected results; and
+%? description of how your results will affect other research areas.
+%Suggestions
+%? Be complete, but brief.
+%? Use all the space allotted.
+%? Avoid describing past accomplishments and the use of the first person.
+%? Write the abstract last so that it reflects the entire application.
+%? Remember that the abstract will be used for purposes other than the review,
+%such as to provide a brief description of the grant in annual reports, presentations, and dissemination to the public.
+
+\begin{centering}
+{\bf PROJECT SUMMARY /  ABSTRACT}
+\end{centering}
+
+% 29 lines (no more than 30 allowed)
+This work seeks to advance quantitative methods for biomolecular design, especially for predicting biomolecular interactions, via a focused series of community blind prediction challenges. 
+Physical methods for predicting binding free energies, or ``free energy methods'', are poised to dramatically reshape early stage drug discovery, and are already finding applications in pharmaceutical lead optimization. 
+However, performance is unreliable, the domain of applicability is limited, and failures in pharmaceutical applications are often hard to understand and fix.
+On the other hand, these methods can now typically predict a variety of simple physical properties such as solvation free energies or relative solubilities, though there is still clear room for improvement in accuracy.
+In recent years, competitions and crowdsourcing have proven an effective model for driving innovations in diverse fields.
+In our field, blind prediction challenges have played a key role in driving innovations in prediction of physical properties and binding, especially in the form of the SAMPL series of challenges. 
+Here, we will continue and extend SAMPL prediction challenges to include new physical properties, more complicated host-guest binding data, and application to biomolecular systems.
+Carefully selected systems and novel experimental data will provide challenges of gradually increasing complexity spanning between systems which are now tractable to those which are marginally out of reach of today's methods but still slightly simpler than those covered by the Drug Design Data Resource (D3R) series of challenges on existing pharmaceutical data. 
+We will work with D3R to run blind challenges on the data we generate and to ensure it is designed to maximally benefit the field.
+
+In {\bf Aim 1}, we will collect new measurements on partitioning, distribution, and protonation of drug-like compounds, in collaboration with partners in the pharmaceutical industry. In {\bf Aim 2}, we leverage our expertise in host-guest binding to generate new data on host-guest binding in cucubiturils and deep cavity cavitands. And in {\bf Aim 3}, we use high-throughput robotic experiments to generate new protein-ligand binding data of biological relevance. {\bf Aim 4} focuses on using this data in the SAMPL series of challenges, applying proven crowdsourcing-based techniques to drive the development of new methods and new understanding of the strengths and weaknesses of existing techniques. We will also run reference calculations with the latest techniques.
+
+This work will ensure the continued success of SAMPL challenges which have already driven considerable innovation in the field and been the focus of more than 90 different publications (each typically cited 5-50 times) since their inception around 2007, and will play a key role in driving the next several generations of improvements in computational techniques for molecular design. 
+The research proposed here will lead to significant improvements in the predictive power of physical models for drug discovery, molecular design and the prediction of physical properties.
+
+
+
+
+%======================================
+
+%\setlength{\bibsep}{0.000in}
+
+%\bibliographystyle{gec_nih}
+%\bibliographystyle{ieeetr}
+%\bibliographystyle{myrefstyle}
+%\bibliography{chodera-research}
+
+
+\end{document}
+
+
+
+
+
+
