@@ -61,9 +61,6 @@
 %\renewcommand{\baselinestretch}{.90}
 \usepackage{wrapfig}
 
-\usepackage{bibspacing}
-\setlength{\bibspacing}{\baselineskip}
-
 
 
 
@@ -104,22 +101,20 @@
 \begin{document}
 
 \textbf{Doctoral Dissertation and Prior Research Experience}\\
-Over the course of my graduate work I have developed the first example of multicomponent bioluminescence imaging with synthetic probes and gained broad experience in the areas of chemical biology and reaction methodology. These efforts combined my skills in chemical synthesis, biological assay development, and computer programming. My work has wide implications in the fields of imaging and protein engineering.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Chemiluminescence
-\begin{wrapfigure}[6]{r}{8cm}
+\begin{wrapfigure}[23]{r}{8cm}
 \vspace{-0.2in}
 \begin{centering}
-\includegraphics[width=\textwidth]{figures/Previous_research/luc_oxidation.pdf}
+\includegraphics[width=\textwidth]{figures/chemilum.pdf}
 
 \end{centering}
 \footnotesize
 \caption{\label{figure:chemilum}
-Oxidation of D-luciferin by firefly luciferase (Fluc) produces a photon of light.
-}
+A) Oxidation of D-luciferin by firefly luciferase (Fluc) produces a photon of light. B) Luciferins can be activated and oxidized in a chemiluminescent manner to produce light. C) Comparison of bioluminescence (left axis, grey bars) and chemiluminescence (right axis, black bars) showed that many analogs were capable of robust light emission independent of enzyme.}
 \end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Over the course of my graduate work I have developed the first example of multicomponent bioluminescence imaging with synthetic probes and gained broad experience in the areas of chemical biology and reaction methodology. These efforts combined my skills in chemical synthesis, biological assay development, and computer programming. My work has wide implications in the fields of imaging and protein engineering.
 
 \textbf{Expanding the imaging toolkit}\\
 Genetically-encoded optical reporters have revolutionized our understanding of biological systems. These tools, namely fluorescent proteins, allow researchers to track multiple targets over extended periods of time in cellulo. However, the transition of fluorescent probes in vivo, to multicellular clinical models, has been hampered by the opacity of tissue and its propensity for autofluorescence. A complementary imaging technology, bioluminescence, does not suffer from these complications because it does not require excitation light.
@@ -130,33 +125,30 @@ To address this issue, I developed and analyzed a number of new luciferin probes
 % TODO Rice Contag JBiomedOpt 2005??
 Thus, I resolved to take advantage of the molecular component of bioluminescence imaging to develop exclusively selective luciferin-luciferase pairs.
 
-\textit{Brominated luciferins are versatile bioluminescent probes}\\ % QUESTION get rid of all of this??
-My strategy for mutually selective probes relied on synthesizing small molecule luciferin analogs and screening them against libraries of functional mutant luciferases. I initially focused on development of minimally perturbed luciferin probes. We rationalized that bromination of the luciferin core might perturb binding to the wildtype enzyme, yet retain inherent light-emitting ability of the molecule. Directed evolution could then be used to restore light emission. To verify this, I developed a chemiluminescence assay to test the relative light-emitting abilities of our luciferin analogs (Figure 1B). Gratifyingly, the brominated probes showed robust emission, indicating that these molecules had the potential to be capable emitters (Figure 1C). Additionally, I have shown that cross-coupling reactions can be used to derivatize the brominated luciferins, producing a variety of modified scaffolds in a divergent manner. This work resulted in a publication in ChemBioChem.4 In addition to the brominated variants, my colleagues and I synthesized a wide variety of modified luciferins analogs—ranging from subtle electronic modifications, to large steric perturbations. The chemiluminescence assay has proven general for these analogs as well, providing a benchmark for light emission before mutant luciferases are developed.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Parallel Screening TODO maybe add a hit back in to the fig as (B)
-\begin{wrapfigure}[12]{l}{8cm}
+\begin{wrapfigure}[19]{l}{8cm}
 \vspace{-0.2in}
 \begin{centering}
-\includegraphics[width=\textwidth]{figures/Previous_research/algorithm_v4.pdf}
+\includegraphics[width=\textwidth]{figures/algorithm_v5.pdf}
 
 \end{centering}
 \footnotesize
 \caption{\label{figure:algorithm}
-Strategy for developing orthogonal bioluminescent probes.
+A) Strategy for developing orthogonal bioluminescent probes. B) A top pair isolaed via parallel screening.
 }
 \end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textit{Orthogonal Luciferase-luciferin pairs for bioluminescence imaging}\\
-Next, we sought to identify luciferase mutants that selectively utilized our luciferin analogs. We designed and generated a range of functional luciferases that reflected a variety of mutations about the active site. Combining molecules and enzymes, we tested 20 luciferins with 207 mutant luciferases (Fig. \ref{figure:algorithm}). The screening experiment generated 4,140 enzyme-substrate combinations, and thus a potential for more than 4 million possible sets of two substrates and two enzymes. Since it would be impractical to evaluate all of these combinations manually, I first derived a mathematical quantification of orthogonality to ‘score’ each potential pairing. Next, I wrote a supercomputer algorithm to search this dataset in a matter of minutes for the highest-scoring pairs. The software provided a ranked list of mutually orthogonal enzyme-substrate pairs that were biochemically verified. A top hit from this list is shown in Figure 2C. Each enzyme exhibited greater than ten-fold preference for its matched substrate. Resolution was maintained when these probes were moved into mouse models, highlighting the speed and accuracy of our approach (Figure 3A). As a next step, I have been searching the data sets for not just pairs of bioluminescent tools, but triplet and quadruplet sets of orthogonal probes. This would enable visualization of three or more populations of interest simultaneously. However, the problem becomes much more complex due to the increase in possible pairings (Figure 2A). Using my algorithm, I have identified 6,171 possible sets of orthogonal triplets, several of which have been verified in bacterial lysate (Figure 3B). This work resulted in a publication in JACS,5 with an additional manuscript submitted to ACS Central Science.6 We hope to use these tools to monitor the locations of cancer cells and the immune system throughout disease progression. Collectively, our orthogonal pairs will enable a variety of multicomponent, in vivo imaging studies, and my screening techniques and computer algorithm will enable advances in other areas of chemical biology.
+\textit{Brominated luciferins are versatile bioluminescent probes}\\ % QUESTION get rid of all of this??
+My strategy for mutually selective probes relied on synthesizing small molecule luciferin analogs and screening them against libraries of functional mutant luciferases. I initially focused on development of minimally perturbed luciferin probes. We rationalized that bromination of the luciferin core might perturb binding to the wildtype enzyme, yet retain inherent light-emitting ability of the molecule. Directed evolution could then be used to restore light emission. To verify this, I developed a chemiluminescence assay to test the relative light-emitting abilities of our luciferin analogs (Figure 1B). Gratifyingly, the brominated probes showed robust emission, indicating that these molecules had the potential to be capable emitters (Figure 1C). Additionally, I have shown that cross-coupling reactions can be used to derivatize the brominated luciferins, producing a variety of modified scaffolds in a divergent manner. This work resulted in a publication in ChemBioChem.4 In addition to the brominated variants, my colleagues and I synthesized a wide variety of modified luciferins analogs—ranging from subtle electronic modifications, to large steric perturbations. The chemiluminescence assay has proven general for these analogs as well, providing a benchmark for light emission before mutant luciferases are developed.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %In vivo imaging TODO update this fig??
-\begin{wrapfigure}[20]{r}{7cm}
+\begin{wrapfigure}[22]{r}{7cm}
 \vspace{-0.2in}
 \begin{centering}
-\includegraphics[width=\textwidth]{figures/Previous_research/just_mice.pdf}
+\includegraphics[width=\textwidth]{figures/just_mice.pdf}
 
 \end{centering}
 \footnotesize
@@ -166,11 +158,25 @@ Mutually orthogonal pairs enable multicomponent imaging in mouse models.
 \end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\textit{Orthogonal Luciferase-luciferin pairs for bioluminescence imaging}\\
+Next, we sought to identify luciferase mutants that selectively utilized our luciferin analogs. We designed and generated a range of functional luciferases that reflected a variety of mutations about the active site. Combining molecules and enzymes, we tested 20 luciferins with 207 mutant luciferases (Fig. \ref{figure:algorithm}). The screening experiment generated 4,140 enzyme-substrate combinations, and thus a potential for more than 4 million possible sets of two substrates and two enzymes. Since it would be impractical to evaluate all of these combinations manually, I first derived a mathematical quantification of orthogonality to ‘score’ each potential pairing. Next, I wrote a supercomputer algorithm to search this dataset in a matter of minutes for the highest-scoring pairs. The software provided a ranked list of mutually orthogonal enzyme-substrate pairs that were biochemically verified. A top hit from this list is shown in Figure \ref{figure:algorithm}B. Each enzyme exhibited greater than ten-fold preference for its matched substrate. Resolution was maintained when these probes were moved into mouse models, highlighting the speed and accuracy of our approach (Figure 3A). As a next step, I have been searching the data sets for not just pairs of bioluminescent tools, but triplet and quadruplet sets of orthogonal probes. This would enable visualization of three or more populations of interest simultaneously. However, the problem becomes much more complex due to the increase in possible pairings (Fig. \ref{figure:algorithm}A). Using my algorithm, I have identified 6,171 possible sets of orthogonal triplets, several of which have been verified in bacterial lysate. This work resulted in publications in JACS, and ACS Central Science. We hope to use these tools to monitor the locations of cancer cells and the immune system throughout disease progression. Collectively, our orthogonal pairs will enable a variety of multicomponent, in vivo imaging studies, and my screening techniques and computer algorithm will enable advances in other areas of chemical biology.
+
 \textit{Expanding the scope of multicomponent imaging}\\
-My most recent work has focused on increasing the practicality of these tools for preclinical in vivo imaging. The major drawbacks of our substrate resolution approach include temporal resolution and background emission. I am addressing these issues by utilizing traditional spectral unmixing algorithms to deconvolute substrate signals mathematically. This will enable sequential imaging of substrates, and the ability to resolve smaller numbers of cells. We are currently testing this technique in mouse models. Additionally, I am evaluating new libraries of luciferases via deep sequencing to elucidate selectivity trends in modified luciferins. % TODO more here!!
+My most recent work has focused on increasing the practicality of these tools for preclinical in vivo imaging. The major drawbacks of our substrate resolution approach include temporal resolution and background emission. I am addressing these issues by utilizing traditional spectral unmixing algorithms to deconvolute substrate signals mathematically. This will enable sequential imaging of substrates, and the ability to resolve smaller numbers of cells. With a top orthogonal pair we have been able to ``unmix" gradients of mutant luciferases in bacterial lysate and resolve mixtures of these mutants in mouse tumor models (Fig. \ref{figure:mouse_unmixing}). We are currently applying this technique to track cells involved in metastasis \textit{in vivo}. % TODO more here!!
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% TODO some multicomponent fig Here
+%Unmixing in vivo
+\begin{wrapfigure}[20]{l}{12cm}
+\vspace{-0.2in}
+\begin{centering}
+\includegraphics[width=\textwidth]{figures/mouse_unmixing.pdf}
+
+\end{centering}
+\footnotesize
+\caption{\label{figure:mouse_unmixing}
+Mouse unmixing.
+}
+\end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \textbf{Previous work in transition metal catalysis methodology}\\
