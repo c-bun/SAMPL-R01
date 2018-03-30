@@ -8,3 +8,11 @@ done
 
 xelatex Research_and_SA.tex
 xelatex Research_and_SA.tex
+
+rm ./*.out
+rm ./*.aux
+rm ./*.bbl
+rm ./*.blg
+rm ./*.log
+
+open Research_and_SA.pdf
