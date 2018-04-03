@@ -98,11 +98,21 @@
 %\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex} % Add some space between paragraphs
 \setlength{\parskip}{0.8ex} % Add some space between paragraphs
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FROM THE WEBSITE:
+% Are the applicant’s academic record and research experience of high quality?
+% Does the applicant have the potential to develop into an independent and productive researcher?
+% Does the applicant demonstrate commitment to a research career in the future?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
-{\large Background and Goals for Fellowship Training}
+\begin{centering}
+  \textbf{BACKGOROUND AND GOALS FOR FELLOWSHIP TRAINING}\\
+\end{centering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Chemiluminescence
-\begin{wrapfigure}[23]{r}{8cm}
+%\begin{wrapfigure}[24]{r}{8cm}
+\begin{wrapfigure}{r}{8cm}
 %\vspace{-0.2in}
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/chemilum.pdf}
@@ -113,7 +123,7 @@
 A) Oxidation of D-luciferin by firefly luciferase (Fluc) produces a photon of light. B) Luciferins can be activated and oxidized in a chemiluminescent manner to produce light. C) Comparison of bioluminescence (left axis, grey bars) and chemiluminescence (right axis, black bars) showed that many analogs were capable of robust light emission independent of enzyme.}
 \end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{Doctoral Dissertation and Prior Research Experience} \textit{Graduate Research at the University California, Irvine, August 2012--May 2018. Supervised by Prof. Jennifer Prescher:}\\
+\textbf{Doctoral Dissertation and Prior Research Experience}\\ \textit{Graduate Research at the University California, Irvine, August 2012--May 2018. Supervised by Prof. Jennifer Prescher:}\\
 Over the course of my graduate work I have developed the first example of multicomponent bioluminescence imaging with synthetic probes and gained broad experience in the areas of chemical biology and reaction methodology. These efforts combined my skills in chemical synthesis, biological assay development, and computer programming. My work has wide implications in the fields of imaging and protein engineering.
 
 \textbf{Expanding the imaging toolkit}\\
@@ -123,11 +133,11 @@ To address this issue, I developed and analyzed a number of new luciferin probes
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Parallel Screening
-\begin{wrapfigure}[21]{l}{8cm}
+%\begin{wrapfigure}[21]{l}{8cm}
+\begin{wrapfigure}{l}{8cm}
 %\vspace{-0.2in}
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/algorithm_v5.pdf}
-
 \end{centering}
 \footnotesize
 \caption{\label{figure:algorithm}
@@ -141,7 +151,8 @@ My strategy for mutually selective probes relied on synthesizing small molecule 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %In vivo imaging TODO change out these hits to be 4br/dluc pair?
-\begin{wrapfigure}[25]{r}{7cm}
+%\begin{wrapfigure}[25]{r}{7cm}
+\begin{wrapfigure}{r}{7cm}
 %\vspace{-0.2in}
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/just_mice.pdf}
@@ -158,12 +169,10 @@ Mutually orthogonal pairs enable multicomponent imaging in mouse models.
 Next, we sought to identify luciferase mutants that selectively utilized our luciferin analogs. We designed and generated a range of functional luciferases that reflected a variety of mutations about the active site. Combining molecules and enzymes, we tested 20 luciferins with 207 mutant luciferases (Fig. \ref{figure:algorithm}). The screening experiment generated 4,140 enzyme-substrate combinations, and thus a potential for more than 4 million possible sets of two substrates and two enzymes. Since it would be impractical to evaluate all of these combinations manually, I first derived a mathematical quantification of orthogonality to ‘score’ each potential pairing. Next, I wrote a supercomputer algorithm to search this dataset in a matter of minutes for the highest-scoring pairs. The software provided a ranked list of mutually orthogonal enzyme-substrate pairs that were biochemically verified. A top hit from this list is shown in Figure \ref{figure:algorithm}B. Each enzyme exhibited greater than ten-fold preference for its matched substrate. Resolution was maintained when these probes were moved into mouse models, highlighting the speed and accuracy of our approach (Figure 3A). As a next step, I have been searching the data sets for not just pairs of bioluminescent tools, but triplet and quadruplet sets of orthogonal probes. This would enable visualization of three or more populations of interest simultaneously. However, the problem becomes much more complex due to the increase in possible pairings (Fig. \ref{figure:algorithm}A). Using my algorithm, I have identified 6,171 possible sets of orthogonal triplets, several of which have been verified in bacterial lysate. This work resulted in publications in JACS, and ACS Central Science (Rathbun, C. M. \textit{et al.}, \textit{J. Am. Chem. Soc.}, \textbf{2017}, \textit{139}, 2351. and Rathbun, C. M. \textit{et al.}, \textit{ACS Cent. Sci.}, \textbf{2017}, \textit{3}, 1254.). We hope to use these tools to monitor the locations of cancer cells and the immune system throughout disease progression. Collectively, our orthogonal pairs will enable a variety of multicomponent, in vivo imaging studies, and my screening techniques and computer algorithm will enable advances in other areas of chemical biology.
 % TODO put chashew and pecan somewhere in here? or revert to mutant numbers? regardless, need to normalize which mutants I'm using.
 
-\textit{Expanding the scope of multicomponent imaging}\\
-My most recent work focused on increasing the practicality of these tools for preclinical in vivo imaging. The major drawbacks of our substrate resolution approach included temporal resolution and background emission. I addressed these issues by utilizing traditional spectral unmixing algorithms to deconvolute substrate signals mathematically. This enabled sequential imaging of substrates, and the ability to resolve smaller numbers of cells. With a top orthogonal pair we ``unmixed" gradients of mutant luciferases in bacterial lysate and resolved mixtures of these mutants in mouse tumor models. Tumors were implanted in mice with varying mixtures of mammalian cells expressing our top probes. Luciferin substrates were sequentially administered and images were acquired between injections. The images were then ``unmixed" and overlayed (Fig. \ref{figure:mouse_unmixing}). We are currently applying this technique to track cells involved in metastasis \textit{in vivo}. % TODO more here??
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Unmixing in vivo
-\begin{wrapfigure}[20]{l}{11cm}
+%\begin{wrapfigure}[15]{l}{11cm}
+\begin{wrapfigure}{L}{11cm}
 %\vspace{-0.2in}
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/mouse_unmixing.pdf}
@@ -171,30 +180,27 @@ My most recent work focused on increasing the practicality of these tools for pr
 \end{centering}
 \footnotesize
 \caption{\label{figure:mouse_unmixing}
-Mouse unmixing. % TODO more here!
+Mixtures of cell populations can be distinguished in a live mouse. Tumors containing varying amounts of cells expressing Pecan and Cashew were implanted into the back of live mice. Substrates were injected i.p. in a sequential fashion, and images were taken between each injection.
 }
 \end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textit{Expanding the scope of multicomponent imaging}\\
+My most recent work focused on increasing the practicality of these tools for preclinical in vivo imaging. The major drawbacks of our substrate resolution approach included temporal resolution and background emission. I addressed these issues by utilizing traditional spectral unmixing algorithms to deconvolute substrate signals mathematically. This enabled sequential imaging of substrates, and the ability to resolve smaller numbers of cells. With a top orthogonal pair we ``unmixed" gradients of mutant luciferases in bacterial lysate and resolved mixtures of these mutants in mouse tumor models. Tumors were implanted in mice with varying mixtures of mammalian cells expressing our top probes. Luciferin substrates were sequentially administered and images were acquired between injections. The images were then ``unmixed" and overlayed (Fig. \ref{figure:mouse_unmixing}). The lab is currently applying these techniques to track cells involved in metastasis \textit{in vivo}.
 
 \textbf{Previous work in transition metal catalysis methodology}\\ % QUESTION keep this section here??
 I spent the first year and a half of my graduate work in the lab of Professor Vy Dong. During this time, I sought new, streamlined methods of carbohydrate synthesis. We developed a new method of selectively acylating sugars via copper catalysis (Chen, I. H. \textit{et al.}, \textit{Chem. Eur. J.}, \textbf{2014}, \textit{20}, 5013.). Our catalysts could distinguish between three similar alcohols moieties to acylate at a set position, depending on the ligand used. This method proved general for a variety of sugar scaffolds containing cis diols.
 
 \textbf{Goals for Fellowship Training}\\
-% TODO general bullshit here
+My ultimate career goal is to obtain a professorship at an R01 institution. I envision a research program at the interface of organic chemistry and protein engineering. Parallel modification of enzymes and their substrates was a cornerstone of my graduate work. And a large aspect of my postdoctoral studies will involve the effects of modifying a ligand and its natural RNA aptamer. Such studies, and the effect that they have on selectivity, will continue into my independent career. In addition to leading innovative research, I look forward to mentoring new scientists within my lab, at the undergraduate, graduate, and postdoctoral levels. Additionally, a professorship provides a platform for communication of science to the public in an approachable way.
 
-\eject
+Thus far my scientific training has placed me at a unique position between organic chemistry and chemical biology. During my undergraduate studies at Hope College, I conducted rigorous physical organic studies of reaction mechanisms. While in the Dong lab at UC Irvine, I leveraged these skills to develop new metal-catalyzed organic transformations. Upon my transition to the Prescher lab, my training in organic chemistry allowed me to think deeply about enzyme catalysis, and the factors that effect binding and turnover. As I continue on to the Palmer lab, this funding will enable me to gain additional training in the study of biological systems on the cellular level. As I continue to hone my skills in organic chemistry and biomolecule engineering, I will learn new skills in microscopy and cell culture. My mentoring team will provide insight with respect to tool development for cellular study.
 
-%\footnotesize
-%\scriptsize
-%\bibliographystyle{acm}
-%%\bibliographystylesampl{nci}
-%%\bibliographystyle{nci}
-%\bibliographystyle{nar}
-%\bibliography{full}{sampl-r01}{BIBLIOGRAPHY AND REFERENCES CITED}
-%\bibliography{sampl}{sampl-r01}{REFERENCES FROM PRIOR SAMPL CHALLENGES}
+The unique focus on RNA in the Biofrontiers Institute at CU Boulder will also enable me to initiate interdisciplinary collaborations ... % TODO More here.
 
-%%\bibliographysampl{sampl}
-\eject
-%%\bibliography{sampl-r01}
+I also intend to use my time as a postdoc to gain additional ``soft'' skills. This funding will give me the freedom to mentor undergraduate and graduate students in the Palmer lab; a crucial skill for my future as a professor. Additionally, I intend to present my work at a Gordon conference and the National Meeting of the American Chemical Society, and continue to build my network with other researchers in the field. With respect to teaching, I am excited to attend the New Assistant Professor Program offered by the Faculty Teaching Excellence Program at CU Boulder. This program helps postdocs and pre-tenure faculty gain the tools and skills that they need to become engaging and informative in the classroom. Professor Palmer is very supportive of these pursuits, and will offer advise with respect to additional training opportunities that I should pursue.
+
+\textbf{Activities Planned Under this Award}\\
+% TODO Rough timeline here.
 
 \end{document}
