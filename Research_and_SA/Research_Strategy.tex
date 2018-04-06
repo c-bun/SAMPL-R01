@@ -6,16 +6,17 @@
 % Is the research project consistent with the applicant’s stage of research development?
 % Is the proposed time frame feasible to accomplish the proposed training?
 
-\textbf{SIGNIFICANCE}\\
-RNA lies at the center of cellular function. Its most appreciated function is to carry protein blueprints to the ribosome for manufacture. Only recently have researchers begun to appreciate its myriad of other functions, many of which also lie at the center of important cellular processes and disease\cite{CechNoncodingRNARevolution2014,DellaRagioneNoncodingRNAschromatin2014,AnastasiadouNoncodingRNAnetworks2018}.
-% TODO maybe a bit more general discussion here? talk about how tracking RNA location is important generally, for all types of RNA? Then dive in to some specific examples?
-Long, noncoding RNA (lncRNA) comprise one such important class of RNA that does not participate in the central dogma\cite{RinnGenomeRegulationLong2012}. Alarmingly, the human genome encodes for as many lncRNA as proteins\cite{Rinntranscriptionalactivityhuman2003}.
-These biomolecules regulate localization of protein complexes within chromatin
-\comment{X, Y, and Z (maybe the proposed test systems??)} have been recently found to have crucial RNA components.
-\comment{Need more on these systems here. Talk about how localization is important.}
-% AMY Yes you could talk about localization here.  Or you could make a figure that provides an overview of different types of RNAs and how they change localization at different points in their lifecyle.  I have a slide on this but the figure is poor quality.  I will send to you.
-This importance for cellular function necessitates a toolset of probes to study these RNAs as they traverse the cell.
+%\textbf{SIGNIFICANCE}\\
+\subsubsection*{SIGNIFICANCE}
+RNA lies at the center of cellular function. Its most appreciated function is to carry protein blueprints to the ribosome for manufacture.
+Only recently have researchers begun to appreciate its myriad of other functions, many of which also lie at the center of important cellular processes and are implicated in a variety of disease states\cite{CechNoncodingRNARevolution2014,DellaRagioneNoncodingRNAschromatin2014,AnastasiadouNoncodingRNAnetworks2018}.
+Long noncoding RNA (lncRNA) comprise one such important class of RNA that does not participate in the central dogma\cite{RinnGenomeRegulationLong2012}. Alarmingly, the human genome encodes for as many lncRNA as proteins\cite{Rinntranscriptionalactivityhuman2003}.
+These transcripts are typically greater than 200 bases, and participate in binding both proteins and nucleic acids, often both at the same time \comment{[cite]}.
+In a striking example, \textit{SNGH5} is a long noncoding RNA (lncRNA) of largely unknown function, that that has been linked to cancer cell survival and metastasis in a diversity of different cancers from lukemias to melanoma\cite{DamasSNHG5promotescolorectal2016,ZhaoLongnoncodingRNA2016,HeLncRNASNHG5regulates2017,YanSNHG5promotesproliferation2018,MalncRNASNHG5associated2018,ShenLncRNASNHG5miR26a2018,ZhengLongnoncodingRNA}. This \comment{XXX base} cytoplasmic transcript is upregulated in these disease states, and has been implicated to interact with a variety of mRNAs in the cytoplasm to control expression. Despite such burning questions in the field of lncRNA, a tool to directly image these species and their interacting partners in living cells has yet to be developed.
 
+%\textbf{BACKGROUND}\\
+\subsubsection*{BACKGROUND}
+Protein studies benefit from a large imaging toolkit that has been developed over the last 25 years. Genetically encodable fluorescent proteins are now ubiquitous for the study of the localization of any translated target in the cell. While fluorescent proteins are a mature, well-understood technology, tools for imaging the localization of individual RNA transcripts in living cells remain limited. The most popular systems to date include dye-binding aptamers (Spinach\cite{PaigeRNAMimicsGreen2011}, Broccoli\cite{FilonovBroccoliRapidSelection2014}, and Mango\cite{AutourFluorogenicRNAMango2018,DolgosheinaRNAMangoAptamerFluorophore2014}), and RNA-binding protein fusions (MS2-FPs)\cite{FuscoSinglemRNAMolecules2003}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Riboglow
 %\begin{wrapfigure}[30]{R}{9cm}
@@ -32,9 +33,6 @@ A) Cobalamin acts as a quenching and localization moiety to guide a fluorescent 
 \end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textbf{BACKGROUND}\\
-Protein studies benefit from a large imaging toolkit that has been developed over the last 25 years. Genetically encodable fluorescent proteins are now ubiquitous for the study of the localization of any translated target in the cell. While fluorescent proteins are a mature, well-understood technology, tools for imaging the localization of individual RNA transcripts in living cells remain limited. The most popular systems to date include dye-binding aptamers (Spinach\cite{PaigeRNAMimicsGreen2011}, Broccoli\cite{FilonovBroccoliRapidSelection2014}, and Mango\cite{AutourFluorogenicRNAMango2018,DolgosheinaRNAMangoAptamerFluorophore2014}), and RNA-binding protein fusions (MS2-FPs)\cite{FuscoSinglemRNAMolecules2003}.
-
 The most analogous to fluoresecent proteins, dye-binding aptamers utilize exogenously administered dyes that give fluorescence induction upon binding their RNA partner\cite{PaigeRNAMimicsGreen2011,FilonovBroccoliRapidSelection2014,AutourFluorogenicRNAMango2018,DolgosheinaRNAMangoAptamerFluorophore2014}.
 This sequence is encoded downstream of an RNA of interest to track its location in the cell. Though excellent binders for their dyes, the aptamers utilized by this technology are unstable in mammalian cells due to their nonnative structure\cite{EtzelSyntheticRiboswitchesPlug2017}. % TODO also cite refs 37-39 from the updated Riboglow paper.
 Additionally, though fluorescence turn-on is excellent \textit{in vitro}, often reaching 1,000 fold, signal induction in cells is typically two to four fold, most likely due to nonspecific binding of the dye.
@@ -50,7 +48,8 @@ The Palmer lab found that this initial generation of Riboglow has the potential 
 
 Though promising, the initial iteration of Riboglow has significant room for improvement. With initial constructs, signal induction upon riboswitch binding never exceeded seven fold \textit{in vitro}, and the pendant dye was never fully quenched (with 10-20\% residual fluorescence). Additionally, to effectively detect stress granules, four riboswitches had to be placed in series to concentrate fluorescence signal. This high background precluded single-molecule imaging. Finally, the strategy cannot currently be used to monitor the location of multiple transcripts in tandem. Herein, I will propose strategies to overcome these limitations through simultaneous modulation of the small molecule construct and riboswitch sequence. This is an undertaking for which I am uniquely suited, due to my experience of tandem modification of small molecule-protein interactions during my graduate studies. First, I will synthesize a variety of new Riboglow probes to optimize fluorescence quenching (Aim 1). Next, I will turn to the sequence of the riboswitch itself. I'll design a screen for brightness that will select the best riboswitch sequence to match the optimized probe structure (Aim 2). This new, brighter pair will be tested for single-molecule detection. Finally, I will use SELEX to identify mutually orthogonal probe-riboswitch pairs for multicomponent RNA imaging (Aim 3).
 
-\textbf{APPROACH \underline{Aim 1.} Synthesize improved Riboglow probes.}\\
+%\textbf{APPROACH \underline{Aim 1.} Synthesize improved Riboglow probes.}\\
+\subsubsection*{APPROACH \underline{Aim 1.} Synthesize improved Riboglow probes.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Aim 1
 %\begin{wrapfigure}[25]{l}{10cm}
@@ -137,7 +136,8 @@ Stability under extended illumination will be important for single-molecule expe
 \textbf{Summary and alternate approaches:}\\
 To identify probes with improved quenching and fluorescence turn-on, linker, attachment point, and fluorophore will be varied. With four linkers, two attachment points, and seven fluorophores, 56 constructs are possible. Though not all of these will be evaluated, simple chemistries involving amide bond couplings and click chemistry will enable us to sample a large amount of this structure space in a rapid fashion. If beta turn zippers do not yield improvements in quenching, other linkers with varying rigidity and lengths will be explored\cite{LeeDesignSynthesisCharacterization2009}, specifically those that promote direct contact between the fluorophore and the cobalamin. Also, it should be noted that new cobalamin constructs are not necessary for the success of aims 2 or 3. It is likely that all three aims will be pursued in parallel, with new discoveries informing the direction of each.
 
-\textbf{\underline{Aim 2.} Adapt Riboglow for single-molecule imaging.}\\
+%\textbf{\underline{Aim 2.} Adapt Riboglow for single-molecule imaging.}\\
+\subsubsection*{\underline{Aim 2.} Adapt Riboglow for single-molecule imaging.}
 Visualization of the lifecycle of single RNA transcripts as they move throughout the cell remains a holy grail of RNA imaging.\cite{LiCentraldogmasinglemolecule2011} Though several recent studies have demonstrated visualization of individual mRNA transcripts, all have required the use of at least 24 repeats of the MS2-binding stem loop\cite{KatzMappingtranslationhotspots2016,FuscoSinglemRNAMolecules2003,YamagishiSinglemoleculeimagingvactin2009,HalsteadRNAbiosensorimaging2015}.
 When these loops (which each bind two MS2 proteins) are fully populated, a complex of more than 2,000 kilodaltons is produced.
 Such a structure is several times larger than most mRNA, giving it the potential to be highly perturbing to normal mRNA behavior.
@@ -174,18 +174,24 @@ Candidate probes that exhibit low background fluorescence, high signal induction
 G3BP1 can be tagged with the Halo-tag, and subsequently labeled with an orthogonal fluorophore to evaluate colocalization. A check of direct mRNA location can then be carried out with FISH.
 This is a technique that the Palmer lab has previously used successfully to test Riboglow probes\cite{BraselmannDevelopmentriboswitchbasedplatform2017}.
 
-To quantify our ability to resolve single mRNA molecules, we will utilize single-molecule FISH (smFISH) imaging to correlate RNA count with Riboglow signal.\cite{TutucciimprovedMS2system2018} If the new Riboglow probes demonstrate single-molecule labeling in the beta actin model system, we will attempt to image migration of transcipts of long, noncoding RNA (lncRNA) from the nucleus to the cytoplasm.
+To quantify our ability to resolve single mRNA molecules, we will utilize single-molecule FISH (smFISH) imaging to correlate RNA count with Riboglow signal\cite{MuellerFISHquantautomaticcounting2013}. This same method was recently used to quantify the sensitivity of an improved MS2 system\cite{TutucciimprovedMS2system2018}.
+
+\comment{If the new Riboglow probes demonstrate single-molecule labeling in the beta actin model system, we will attempt to image migration of transcipts of long noncoding RNA (lncRNA) from the nucleus to the cytoplasm.
 Recently, a surprisingly large number of lncRNA were identified in the cytoplasmic compartment via APEX-RIP\cite{KaewsapsakLivecellmappingorganelleassociated2017}.
 Most known functions of lncRNA involve networking of chromatin... % TODO continue here.
-One, a transcript called SNHG5 has been implicated in colorectal cancer cell survival\cite{DamasSNHG5promotescolorectal2016}. Little is known about cytosolic lncRNAs with respect to function, and less is known about localization.
+One, a transcript called SNHG5 has been implicated in colorectal cancer cell survival\cite{DamasSNHG5promotescolorectal2016}. Little is known about cytosolic lncRNAs with respect to function, and less is known about localization.}
 
 % AMY Can propose to do this for a highly expressed transcript and a lower expressed transcript (could start by doing this for mRNA) but also do for a small nuclear RNA (involved in splicosome) or maybe better yet a long noncoding RNA....maybe look through some of John's papers and see if there are some that have distinct localizations....
 
 % AMY Should address concern that tagging RNA perturbs RNA localization, dynamics and function and propose tests to evaluate this concern (localization can be assessed with live-fixed correlative smFISH experiments), function and dynamics are harder and may depend on the specific target.  Certainly the amount of RNA over time (so half life) can be assessed by Northern blotting (not perfect because population level as opposed to single cell, but still gets at the overall underlying concern).  This recent paper from Singer lab: https://www.ncbi.nlm.nih.gov/pubmed/29131164 may have some useful ideas of how to test perturbations and may even contain some ideas for target RNAs of interest.  This paper also has some intriguing ideas: https://www.ncbi.nlm.nih.gov/pubmed/29239719 (you could look at RNAs in cool, suprising locations)
 
 \textbf{Summary and alternate approaches:}\\
-To attain single-molecule resolution with Riboglow, the probes synthesized in Aim 1 will be screened with libraries of riboswitch mutants \textit{in cellulo}. Cells containing bright mutants will be sorted via FACS and analyzed. Library hits will be characterized \textit{in vitro}, and tested via established assays for single-molecule localization \textit{in cellulo}. Probes that are successful in our model systems will be used to image long, noncoding RNA under the supervision of Professor John Rinn. If single-molecule resolution is not observed in the library hits, additional riboswitches (over the four repeats already planned) will be added to concentrate fluorescent signal. Even if 24 repeats are required, the construct will still be less than half the size of the MS2 system.
+To attain single-molecule resolution with Riboglow, the probes synthesized in Aim 1 will be screened with libraries of riboswitch mutants \textit{in cellulo}. Cells containing bright mutants will be sorted via FACS and analyzed. Library hits will be characterized \textit{in vitro}, and tested via established assays for single-molecule localization \textit{in cellulo}. Probes that are successful in our model systems will be used to image long noncoding RNA under the supervision of Professor John Rinn. If single-molecule resolution is not observed in the library hits, additional riboswitches (over the four repeats already planned) will be added to concentrate fluorescent signal. Even if 24 repeats are required, the construct will still be less than half the size of the MS2 system.
 
+%\textbf{\underline{Aim 3.} Develop mutually orthogonal Riboglow probes for multicomponent imaging.}\\
+\subsubsection*{\underline{Aim 3.} Develop mutually orthogonal Riboglow probes for multicomponent imaging.}
+% TODO include precedent: \cite{HocineSinglemoleculeanalysisgene2013}
+% IDEA track lncRNA and mRNA in this cancer model? \cite{DamasSNHG5promotescolorectal2016}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Aim 3: Multicomponent imaging
 %\begin{wrapfigure}[25]{l}{10cm}
@@ -200,10 +206,7 @@ A) SELEX will be used to screen for riboswitchs that bind each cobalamin in a mu
 }
 \end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\textbf{\underline{Aim 3.} Develop mutually orthogonal Riboglow probes for multicomponent imaging.}\\
-% TODO include precedent: \cite{HocineSinglemoleculeanalysisgene2013}
-The ability to track multiple RNA transcripts simultaneously would enable study of the interactions of RNA as they move through the cell. \comment{Independent RNA transcripts are implicated to interact in X and Y ways.}
+The ability to track multiple RNA transcripts simultaneously would enable study of the interactions of RNA as they move through the cell. Independent RNA transcripts are implicated to interact in a variety of ways. A striking example of this is implicated in colorectal cancer cell survival\cite{DamasSNHG5promotescolorectal2016}. \textit{SNHG5} is a cytoplasmic long noncoding RNA that is upregulated in colorectal cancer. This transcript has been implicated to interact with a variety of mRNA transcripts in the cytoplasm to control expression.
 % AMY Could invoke the diagram of different RNAs and their processing/lifecycle.  Could be useful for looking at different mRNAs (dynamics of half life, processing) or for mRNAs and splicing RNAs or lncRNAs and their targets...
 The modularity of the Riboglow platform is well suited to enable such an experiment. Probes will be distinguished through the use of different fluorophores, and different riboswitch sequences will be used to bind each structurally different probe in a mutually exclusive manner (Fig. \ref{figure:aim3}B).
 
