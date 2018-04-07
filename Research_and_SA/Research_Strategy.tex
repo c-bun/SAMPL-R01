@@ -10,9 +10,11 @@
 \subsubsection*{SIGNIFICANCE}
 RNA lies at the center of cellular function. Its most appreciated role is to carry protein blueprints to the ribosome for manufacture.
 Only recently have researchers begun to appreciate its myriad of other functions, many of which also lie at the center of important cellular processes and are implicated in a variety of disease states\cite{CechNoncodingRNARevolution2014,DellaRagioneNoncodingRNAschromatin2014,AnastasiadouNoncodingRNAnetworks2018}.
-Long noncoding RNA (lncRNA) comprise one such important class of RNA that does not participate in the central dogma\cite{RinnGenomeRegulationLong2012}. Alarmingly, the human genome encodes for as many lncRNA as proteins\cite{Rinntranscriptionalactivityhuman2003}.
-These transcripts are typically greater than 200 bases, and participate in binding both proteins and nucleic acids, often both at the same time \comment{[cite]}.
+Long noncoding RNA (lncRNA) comprise one such important class of RNA that does not participate in the central dogma\cite{RinnGenomeRegulationLong2012}. Alarmingly, the human genome encodes for as many lncRNA as proteins\cite{Rinntranscriptionalactivityhuman2003,RinnGenomeRegulationLong2012}.
+These transcripts are typically greater than 200 bases, and participate in binding both proteins and nucleic acids, often both at the same time\cite{AnastasiadouNoncodingRNAnetworks2018,RinnGenomeRegulationLong2012}.
 In a striking example, \textit{SNGH5} is a long noncoding RNA (lncRNA) of largely unknown function, that that has been linked to cancer cell survival and metastasis in a diversity of different cancers from lukemias to melanoma\cite{TanakaRitsukoIntronicU50small2001,DamasSNHG5promotescolorectal2016,ZhaoLongnoncodingRNA2016,HeLncRNASNHG5regulates2017,YanSNHG5promotesproliferation2018,MalncRNASNHG5associated2018,ShenLncRNASNHG5miR26a2018,ZhengLongnoncodingRNA}. This 2 kilobase cytoplasmic transcript is upregulated in these disease states, and has been implicated to interact with a variety of mRNAs in the cytoplasm to control expression, though little else is known about its role in normal cell function. Despite such burning questions in the field of lncRNA, a tool to directly image these species and their interacting partners in living cells has yet to be reported.
+
+\comment{I tried to set up a bit of a story here with the SNGH5 gene that will carry though the rest of the proposal. Let me know if this seems appropriate.}
 
 %\textbf{BACKGROUND}\\
 \subsubsection*{BACKGROUND}
@@ -20,10 +22,10 @@ Protein studies benefit from a large imaging toolkit that has been developed ove
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Riboglow
 %\begin{wrapfigure}[30]{R}{9cm}
-\begin{wrapfigure}{R}{8cm}
+\begin{wrapfigure}{R}{7.5cm}
 %\vspace{-0.2in}
 \begin{centering}
-\includegraphics[width=\textwidth]{figures/fig1v2.pdf}
+\includegraphics[width=\textwidth]{figures/fig1v3.pdf}
 
 \end{centering}
 \footnotesize
@@ -55,7 +57,7 @@ Though promising, the initial iteration of Riboglow has significant room for imp
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Aim 1
 %\begin{wrapfigure}[25]{l}{10cm}
-\begin{wrapfigure}{r}{12cm}
+\begin{wrapfigure}{r}{12.5cm}
 %\vspace{-0.2in}
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/aim1v3.pdf}
@@ -145,6 +147,7 @@ When these loops (which each bind two MS2 proteins) are fully populated, a compl
 Such a structure is several times larger than most mRNA, giving it the potential to be highly perturbing to normal mRNA behavior.
 Riboglow has the potential to reduce the size of the fluorescent probe by 10--100-fold (relative to the MS2 system), however, high fluorescence background and poor signal induction precluded these studies\cite{BraselmannDevelopmentriboswitchbasedplatform2017}.
 
+\comment{I still need to work in here some statements about RNA imaging experiments being inherently ``sparse labeling.''}
 % AMY You probably want to make it clear that visualizing single molecules of RNA is feasible if the fluorophores themselves are bright enough because there aren't that many copies of the RNA at any given time (might be good to find a reference for this.  I don't know one off the top of my head) - in other words - this is a sparsely populated sample.
 
 With the wide variety of new probe constructs developed to optimize quenching (Aim 1), changes will be made to the sequence of the cobalamin riboswitch with the goal of increasing fluorescence turn-on. \textit{A directed evolution screen for fluorescence brightness will identify optimal riboswitch sequences that promote fluorescence signal induction}.
@@ -152,7 +155,7 @@ With the wide variety of new probe constructs developed to optimize quenching (A
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Aim 2
 %\begin{wrapfigure}[25]{r}{8cm}
-\begin{wrapfigure}{R}{8cm}
+\begin{wrapfigure}{R}{10cm}
 %\vspace{-0.2in}
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/aim2.pdf}
@@ -197,7 +200,7 @@ To attain single-molecule resolution with Riboglow, the probes synthesized in Ai
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Aim 3: Multicomponent imaging
 %\begin{wrapfigure}[25]{l}{10cm}
-\begin{wrapfigure}{L}{8cm}
+\begin{wrapfigure}{L}{10cm}
 %\vspace{-0.2in}
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/aim3v2.pdf}
@@ -208,14 +211,18 @@ A) SELEX will be used to screen for riboswitches that bind each cobalamin in a m
 }
 \end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The ability to track multiple RNA transcripts simultaneously would enable study of the interactions of RNA as they move through the cell. Upregulation of \textit{SNHG5} in colorectal cancer has been implicated in stabilization of a variety of mRNA in the cytoplasm\cite{DamasSNHG5promotescolorectal2016}. Direct hybridization of this lncRNA with mRNA protects transcipts from degradation, and enables translation, promoting disease states. Despite these implications, these interactions have never been visualized in living cells, and thus the functions of \textit{SNHG5} and other lncRNA remain unknown. Localization of these lncRNA and their mRNA targets in living cells would shed light on these mysterious processes.
 
-The modularity of the Riboglow platform is well suited to enable such an experiment. \textit{Probes will be distinguished through the use of different fluorophores, and different riboswitch sequences will be used to bind each structurally different probe in a mutually exclusive manner (Figure \ref{figure:aim3}B)}.
+\comment{This is where I think the proposal breaks down a little bit. It's hard to discuss multicomponent imaging in a clear way, and even harder to design an experiment to validate the tool. Let me know what you think.}
+
+The ability to track multiple RNA transcripts simultaneously would enable study of the interactions of RNA as they move throughout the cell. Upregulation of \textit{SNHG5} in colorectal cancer has been implicated in stabilization of a variety of mRNA in the cytoplasm\cite{DamasSNHG5promotescolorectal2016}. Direct hybridization of this lncRNA with mRNA protects transcipts from degradation, and enables translation, promoting disease states. Despite these implications, these interactions have never been visualized in living cells, and thus the functions of \textit{SNHG5} and other lncRNA remain unknown. Localization of these lncRNA and their mRNA targets in living cells would shed light on these mysterious processes.
+
+The modularity of the Riboglow platform is well suited to enable such an experiment, however mutually orthogonal riboswitch-probe pairs must first be identified. \textit{In vitro selection will enable identification of mutually-selective riboswitch-probe pairs for multicomponent RNA imaging}(Figure \ref{figure:aim3}B).
+%\textit{Probes will be spectrally distinguished through the use of distinct fluorophores, and different riboswitch sequences will be used to bind each structurally unique probe in a mutually-exclusive manner (Figure \ref{figure:aim3}B)}.
 
 Fortunately, screening for substrate selectivity is well-precedented in RNA engineering through systematic evolution of ligands by exponential enrichment (SELEX)\cite{MairalAptamersmoleculartools2008,ChoApplicationsAptamersSensors2009}.
-In fact, \textit{de novo} riboswitches have already been developed for cobalamin and a few of its analogs via SELEX\cite{LorschvitroselectionRNA1994}. This important precedent shows that even small changes to the structure of the cobalamin can be distinguished by engineered RNA, and implies that no additional changes will need to be made to the cobalamin structure apart from those constructs already proposed above. However, to improve our chances at identifying mutually-orthogonal probes, we will begin by screening probes that contain each of the two linker attachment points (Aim 1) to maximize structural differences at the cobalamin center.
+In fact, \textit{de novo} aptamers have already been developed for cobalamin and a few of its analogs via SELEX\cite{LorschvitroselectionRNA1994}. This important precedent shows that even small changes to the structure of the cobalamin can be distinguished by engineered RNA indicating that no additional changes will need to be made to the cobalamin structure apart from those constructs already proposed above. However, to improve our chances at identifying mutually-orthogonal probes, we will begin by screening probes that contain each of the two linker attachment points (Aim 1) to maximize structural differences at the cobalamin center.
 
-Importantly, for our selection experiments, we will not be starting from a completely randomized sequence of nucleic acids. It will be crucial to retain the original fold (and thus \textit{in cellulo} stability) of the native riboswitch. RNA biosensors developed in this way are known to have increased stability relative to aptamers selected \textit{de novo}\cite{PorterRecurrentRNAmotifs2017}.
+Importantly, our selection experiments will not start from a completely randomized sequence of nucleic acids. It will be crucial to retain the original fold (and thus \textit{in cellulo} stability) of the native riboswitch. RNA biosensors developed in this way are known to have increased stability relative to aptamers selected \textit{de novo}\cite{PorterRecurrentRNAmotifs2017}.
 Additionally, brighter probe sequences identified in Aim 2 will be retained to preserve the bound conformation of the linker and fluorophore as much as possible.
 The design of the starting RNA libraries, and subsequent selection experiments will be carried out under the supervision of Professor Robert Batey (see Batey letter of support), an expert in SELEX and RNA engineering\cite{TrauschChapterThreeDesign2015,PorterRecurrentRNAmotifs2017}.
 Libraries will target bases known to participate in contacts with the cobalamin small molecule\cite{JohnsonJrB12cofactorsdirectly2012,PorterRecurrentRNAmotifs2017}.
@@ -223,19 +230,23 @@ The selection will be carried out as shown in Figure \ref{figure:aim3}A. Briefly
 The synthetic library of riboswitches will be incubated with the beads, and unbound sequences will be rinsed away.
 Riboswitches that bind selectively will be collected off the beads and amplified (via reverse transcription, PCR amplification, and transcription) to undergo another round of selection (for a total of 7-10 rounds).
 In subsequent rounds, the stringency of the screen will be increased via additional washes and reduction of RNA concentration.
-In the final 2-3 rounds of selection, a counterselection will be conducted to ensure orthogonality with other synthetic probes (Figure \ref{figure:aim3}A). In this way, the probe (or probes) intended to be orthogonal to the construct under selection will wash away any riboswitches that do not bind selectively.
-Riboswitches will be deep sequenced to identify library convergence and optimal clones\cite{PorterRecurrentRNAmotifs2017}. This process will be repeated for each probe of interest, with negative screens against each other probe that is intended for multiplexed use.
+In the final 2-3 rounds of selection, a counterselection will be conducted to ensure orthogonality with our other synthetic probes (Figure \ref{figure:aim3}A). In this way, the probe (or probes) intended to be orthogonal to the construct under selection will wash away any riboswitches that do not bind selectively.
+Riboswitches will be deep sequenced to identify library convergence and optimal clones\cite{PorterRecurrentRNAmotifs2017}. This process will be repeated for each probe of interest, with counterselections against each other probe that is intended for multiplexed use.
 % TODO make a point here about how unnatural ligand architectures will help reduce off-target fluorescence.
 
-Mutually-orthogonal probes identified through the \textit{in vitro} selection will be verified in a similar fashion as described in Aim 2. Probe extinction coefficient, quantum yield, photostability, and binding affinity will be characterized \textit{in vitro}. Probes will also be independently verified \textit{in cellulo} via the $\upbeta$-actin fusion assay described in Aim 2.
+Mutually-orthogonal probes identified through the \textit{in vitro} selection will be verified in a similar fashion as described in Aim 2. Probe extinction coefficient, quantum yield, photostability, and binding affinity will be characterized \textit{in vitro}. Probes will also be independently verified \textit{in cellulo} via the $\upbeta$-actin fusion assay described in Aim 2 to ensure that the sensitivity of each probe was retained.
+
+If a robust pair of Riboglow probes is identified, a lncRNA will be imaged interacting with a putative binding partner mRNA. \textit{SNGH5} has been shown to promote colorectal cancer survival through stabilization of mRNA that promote tumor growth\cite{DamasSNHG5promotescolorectal2016}. Among these mRNA is the \textit{SPATS2} gene, which has a base pairing interaction in its 3'-UTR with \textit{SNGH5} exon 1. Matched Riboglow probes will be used to image this interaction. An additional check for localizaton will be made through fluorescent tagging of \textit{STAU1}, a protein that binds to the 3'-UTR of mRNA and mediates their degradation\cite{ParkEonyoungStaufenmediatedmRNA2013}. Single molecule FISH will provide a final check of probe selectivity.
+
+\comment{I'm making the assumption here that single-molecule imaging capability will be retained after SELEX, which I think is a bit of a jump. As a protein engineer, I've now convinced myself that I would develop the probes in the reverse order: SELEX first (which is like hitting the aptamer with a hammer) and then FACS screen second (which is more gentle). I have toyed with switching the aims, but I can't think of a nice, non single-molecule technique for evaluating the multicomponent probes (mostly because I'm still clueless about the literature). Thoughts?}
 
 % TODO talk about checks for retained (single molecule) sensitivity here. if some sensitivity lost, can rescreen for brightness.
 
 % TODO now talk about SNHG5 experiment?? relegate the U-body experiment to the alternative approaches section
 
-Once mutually-selective Riboglow probes are identified, simultaneous detection of two transcripts will be attempted (Figure \ref{figure:aim3}B). In addition to $\upbeta$-actin mRNA stress granule localization, small nuclear RNA (snRNA) U1 will be labeled and visualized in U-bodies. Imaging of U1 in U-bodies is a second system that the Palmer lab has already used to test Riboglow probes\cite{BraselmannDevelopmentriboswitchbasedplatform2017}. In this assay, snRNA U1 is fused with the riboswitch of interest and transfected into cells. Upon treatment with Thapsigargin, U1 is sequestered to U-bodies in the nucleus and cytosol\cite{HuttenroleCajalbodyassociatedSUMO2014}. Marker protein survival motor neuron (SMN) is also known to localize to these structures, and can be tagged with a fluorescent protein or Halo-tag for co-localization.
+% Once mutually-selective Riboglow probes are identified, simultaneous detection of two transcripts will be attempted (Figure \ref{figure:aim3}B). In addition to $\upbeta$-actin mRNA stress granule localization, small nuclear RNA (snRNA) U1 will be labeled and visualized in U-bodies. Imaging of U1 in U-bodies is a second system that the Palmer lab has already used to test Riboglow probes\cite{BraselmannDevelopmentriboswitchbasedplatform2017}. In this assay, snRNA U1 is fused with the riboswitch of interest and transfected into cells. Upon treatment with Thapsigargin, U1 is sequestered to U-bodies in the nucleus and cytosol\cite{HuttenroleCajalbodyassociatedSUMO2014}. Marker protein survival motor neuron (SMN) is also known to localize to these structures, and can be tagged with a fluorescent protein or Halo-tag for co-localization.
 
-To test multicomponent labeling, cells will be cotransfected with two orthogonal riboswitches. One labeling $\upbeta$-actin mRNA, and the other fused to snRNA U1. The cells would then be treated with arsenite or Thapsigargin, and a mixture of both cobalamin probes would be bead loaded. Upon treatment with arsenite, only the first would be expected to be visualized in the stress granules that form, while treatment of Thapsigargin should only give puncta with signal for the second probe.
+% To test multicomponent labeling, cells will be cotransfected with two orthogonal riboswitches. One labeling $\upbeta$-actin mRNA, and the other fused to snRNA U1. The cells would then be treated with arsenite or Thapsigargin, and a mixture of both cobalamin probes would be bead loaded. Upon treatment with arsenite, only the first would be expected to be visualized in the stress granules that form, while treatment of Thapsigargin should only give puncta with signal for the second probe.
 
 % IDEA this would only be interesting in a single-molecule experiment: Once mutually-selective Riboglow probes are identified, they will be tested in mammalian cells to probe the localization of \textit{SNGH5} and its interacting partners\cite{DamasSNHG5promotescolorectal2016}.
 
@@ -243,7 +254,9 @@ To test multicomponent labeling, cells will be cotransfected with two orthogonal
 
 \textbf{Summary and alternate approaches:}
 To develop multicomponent Riboglow, \textit{in vitro} selection will identify orthogonal riboswitch-probe pairs through a series of selections and counterselections.
-Following characterization \textit{in vitro}, probes will be tested for multiplexed imaging of ribonucleoprotein complexes \textit{in cellulo}.
+Following characterization \textit{in vitro}, probes will be tested for multiplexed imaging of lncRNA-mRNA interactions \textit{in cellulo}. It is possible that the \textit{in vitro} selection will result in a loss of fluorescence turn-on. If this is the case, riboswitch sequences will be resubjected to the fluorescence intensity screen described in Aim 2. Additionally, it may be difficult for the riboswitch to differentiate probes with similar cobalamin-linker structures. If the SELEX screen does not yield well-resolved pairs, additional steric bulk can be added to to the cobalamin (at either the 5' OH of the ribose, or the axial position of the cobalt), to aid in differentiation.
+
+These studies will provide the first glimpse into the real-time behavior of lncRNA \textit{SNGH5} and its interacting partners. With new tools in the RNA imaging toolkit, we will be able to ask new questions about the little understood biomolecule that accounts for half of all cellular transcription. \comment{I still need to elaborate here a bit.}
 
 %%% Local Variables: ***
 %%% mode: latex ***
