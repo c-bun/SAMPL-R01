@@ -55,32 +55,34 @@ Though promising, the initial iteration of Riboglow has significant room for imp
 \subsubsection*{APPROACH \underline{Aim 1.} Synthesize improved Riboglow probes.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Cbl constructs
-\begin{wrapfigure}{r}{12.5cm}
+\begin{wrapfigure}{R}{10cm}
 \begin{centering}
-\includegraphics[width=\textwidth]{figures/aim1v3.pdf}
+\includegraphics[width=\textwidth]{figures/aim1v5.pdf}
 \end{centering}
 \footnotesize
 \caption{\label{figure:CblConstructs}
-A) Tryptophan zipper peptides will be used to maximize FRET and contact quenching in the unbound state. B) Conjugation via the axial site of the cobalt metal center will provide additional probe structural diversity.
+A) Synthesis of two structurally distinct attachment points for Riboglow probes. Both modes of conjugation have already been described in Ref. \cite{ChrominskiVitaminB12Derivatives2014} (see Gryko support letter). Top: Conjugation with CDT at the ribose 5' OH was used in the first-generation probes \cite{BraselmannDevelopmentriboswitchbasedplatform2017}. Bottom: Alkynylation at the metal center with 4-ethynylbenzyl alcohol will enable subsequent coupling with CDT. Ac\textsubscript{2}O: acetic anhydride, DBU: 1,8-diazabicyclo[5.4.0]undec-7-ene, CDT: 1,1′-carbonyl-di-(1,2,4-triazole), CuAAC: copper catalyzed azide-alkyne cycloaddition. B) Tryptophan zipper peptides will be used to maximize FRET and contact quenching in the unbound state.
 }
 \end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The main drawback of Riboglow is the poor turn-on that is observed upon probe binding. In this aim, I intend to leverage my background in synthetic chemistry to produce a panel of diverse probe structures that improve fluorescence quenching (and thus signal induction). In previous studies in collaboration with Professor Dorota Gryko (see Gryko letter of support) a small number of linkers and fluorophores were evaluated for quenching and fluorescence turn-on. Linker length and fluorophore wavelength were varied to gauge the quenching ability of cobalamin. Remarkably, some degree of quenching occurred in all of the constructs synthesized, regardless of the spectral overlap of the fluorophore and the cobalamin. However, most retained 10-20\% residual fluorescence, which increased background signal significantly. \textit{To optimize probe function, I will vary linker composition, attachment point, and pendant fluorophore.}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Zipper Linkers
-\begin{wraptable}{L}{10cm}
-\caption{Tryptophan zippers of varying stability will be tested to maximize fluorescence quenching. Values were obtained from Ref. \cite{FesinmeyerEnhancedHairpinStability2004}.}\label{table:ZipperLinkers}
+\begin{wraptable}{L}{9cm}
+\caption{Tryptophan zippers of varying stability will be tested to maximize fluorescence quenching. Azidoalanine (Az) will be added to the c-terminus to enable easy fluorophore conjugation. Values were obtained from Ref. \cite{FesinmeyerEnhancedHairpinStability2004} and reflect measurements for the peptide without the c-terminal azidoalanine.}\label{table:ZipperLinkers}
 \begin{tabular}{c | c >{\centering\arraybackslash}m{1.5cm} } % funky greater than thing centers wrapped text in the cell
 \toprule
 Sequence & Tm ($^\circ$C) &  \% folded (25 $^\circ$C) \\\toprule
-KKWTW-NPATGK-WTWQE & 85 & >96 \\
-KKYTW-NPATGK-WTVQE & 66 & 92 \\
-GEWTY-NPATGK-FTVTE & 47 & 74 \\  \hline
-GGGGG-GGGGGG-GGGGG & N/A & N/A \\
+\texttt{KKWTW-NPATGK-WTWQE(Az)} & 85 & >96 \\ % \texttt{} makes things monospace
+\texttt{KKYTW-NPATGK-WTVQE(Az)} & 66 & 92 \\
+\texttt{GEWTY-NPATGK-FTVTE(Az)} & 47 & 74 \\  \hline
+\texttt{GGGGG-GGGGGG-GGGGG(Az)} & N/A & N/A \\
 \bottomrule
 \end{tabular}
 \end{wraptable}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Ideally, in the unbound state, the cobalamin and fluorophore would be closely associated to maximize FRET and contact quenching\cite{RosendahlSynthesisbiologicalactivity1982,ShellVitaminB12Tunable2015,ShellTunableVisibleNearIR2014}.
 In the RNA-bound state, the molecules would reside at their maximal distance to promote fluorescence\cite{LeeDesignSynthesisCharacterization2009}.
 To strike this balance, I will use a synthetic $\upbeta$-hairpin as the linker between cobalamin and the fluorophore (Figure \ref{figure:CblConstructs}A, Table \ref{table:ZipperLinkers}).
@@ -90,9 +92,10 @@ These motifs are as small as twelve amino acids and some are stable to denaturat
 In the unbound state, such a linker would hold the quencher and fluorophore in close proximity (due to the short distance between the N and C termini of the peptide, Figure \ref{figure:CblConstructs}A).
 When the cobalamin is bound by the riboswitch, steric occlusion would force the $\upbeta$-hairpin turn to unfold to place the fluorophore-quencher pair at a larger distance.
 A wide range of tryptophan zippers have been developed with a varitey of structures and stabilities, enabling easy synthesis of a range of different linkers via solid phase peptide synthesis\cite{CochranTryptophanzippersStable2001,KierProbingLowerSize2008,AndersenMinimizationOptimizationDesigned2006,FesinmeyerEnhancedHairpinStability2004} (see Equipment document).
-Cobalamin and a fluorophore will then be coupled to each terminus of the linker via additional amide couplings\cite{JackowskaVitaminB12derivatives2018}.
-% AMY I am wondering if "amide couplings" provides enough detail to reviewers to assess synthetic feasibility.  Do you need to indicate what functional groups are necessary on Cbl and the fluorophore and clarify that you can obtain / synthesize such molecules? Is it reasonable to show a model synthetic scheme?
+Cobalamin would then be coupled to the linker via amide coupling and alkynyl fluorphores would be appended via copper catalyzed azide-alkyne cycloaddition (CuAAC)\cite{KolbHartmuthC.ClickChemistryDiverse2001,PattersonFindingRightBioorthogonal2014} (Figure \ref{figure:CblConstructs}A).
+This general synthetic sequence is very similar to that used to make the original Riboglow probes\cite{BraselmannDevelopmentriboswitchbasedplatform2017}.
 A starting set if linkers are listed in Table \ref{table:ZipperLinkers}.
+To enable modularity, an azidoalanine amino acid will be appended to the C-termini of all linkers during peptide synthesis.
 The polyglycine linker will be used as a negative control for a linker with little secondary structure, but identical length.
 If the fold proves to be too stable (dequenching is not observed), the amino acids of the peptide linker will be varied to tune the melting temperature.
 Or, if adequate quenching is not observed, the relative positions of the N and C termini will be adjusted based upon structural data available on these $\upbeta$-hairpin, available in the Protein Data Bank (PDB).
@@ -102,9 +105,8 @@ Another underexplored variable of the original Riboglow probes is the linker att
 Though the 5' hydroxyl of the cobalamin ribose is the most accessible nucleophile on the structure, there exist several other possible sites of conjugation.
 Perhaps the second most common site is the axial ligand of the cobalt metal itself.
 Though many studies have taken advantage of the labile nature of certain alkyl modifications at this position\cite{ShellVitaminB12Tunable2015}, others have found alkynyl modifications to be stable to air and light\cite{ChrominskiReductionfreesynthesisstable2013,RuetzMarkusPhenylethynylcobalaminLightStable2013}.
-Following this precedent, I will synthesize a cobalamin with an alkyne handle attached to the cobalt metal center (Figure \ref{figure:CblConstructs}B).
-Such a molecule has already been synthesized in the lab of Dorota Gryko (see Gryko letter of support), and shown to be amenable to functionalization via dipolar azide-alkyne cycloaddition (AAC)\cite{ChrominskiVitaminB12Derivatives2014}.
-The alkyne handle will be readily conjugated to a variety of linkers with terminal azides\cite{KolbHartmuthC.ClickChemistryDiverse2001,PattersonFindingRightBioorthogonal2014}.
+Following this precedent, I will synthesize a cobalamin with an alkyne handle attached to the cobalt metal center (Figure \ref{figure:CblConstructs}A).
+Such a molecule has already been synthesized in the lab of Dorota Gryko (see Gryko letter of support), and shown to be amenable to functionalization\cite{ChrominskiVitaminB12Derivatives2014}. All newly synthesized Riboglow probes will be purified via high-performance liquid chromatography (HPLC), and structurally verified via nuclear magnetic resonance (NMR) spectroscopy and high resolution mass spectrometry (HRMS).
 
 These constructs will also be evaluated for degree of fluorescence quenching, and brightness in the presence and absence of the cobalamin riboswitch.
 It is possible that incorporation of a ligand at this site on the metal center will abolish binding to the native riboswitch due to its positioning in the binding pocket\cite{JohnsonJrB12cofactorsdirectly2012}.
@@ -120,9 +122,9 @@ Cy5 & 646 & 662 & 271,000 & 0.2\\
 ATTO 488 & 501 & 523 & 90,000 & 0.8\\
 ATTO 590 & 594 & 624 & 120,000 & 0.8\\
 ATTO 633 & 629 & 657 & 130,000 & 0.6\\  \hline
-JF\textsubscript{549} & 549 & 571 & 101,000 & 0.88\\
-JF\textsubscript{585} & 585 & 609 & 156,000 & 0.78\\
-JF\textsubscript{635} & 635 & 652 & 167,000 & 0.56\\
+\textbf{JF\textsubscript{549}} & \textbf{549} & \textbf{571} & \textbf{101,000} & \textbf{0.88}\\ % this is a painful solution, with more time try this?: https://tex.stackexchange.com/questions/309833/format-whole-row-of-table-as-bold
+\textbf{JF\textsubscript{585}} & \textbf{585} & \textbf{609} & \textbf{156,000} & \textbf{0.78}\\
+\textbf{JF\textsubscript{635}} & \textbf{635} & \textbf{652} & \textbf{167,000} & \textbf{0.56}\\
 \bottomrule
 \end{tabular}
 \end{wraptable}
@@ -131,17 +133,13 @@ The final variable in the molecular structure of the Riboglow probe is the fluor
 Table \ref{fluorophores} includes a subset of the probes that will be explored.
 Emphasis will be placed on fluorophores with high extinction coefficients and quantum yields, with the intent for these probes to be used in single-molecule imaging (Aim 2).
 Additionally, JF\textsubscript{585} and JF\textsubscript{635} were shown to be highly fluorogenic upon conjugation to a protein tag, with absorbance increases of 80 and 113-fold respectively\cite{Grimmgeneralmethodfinetune2017}.
-The Lavis lab makes these probes freely available, and has offered to provide us with alkynylated versions for easy conjugation via CuAAC (see support letter).
-% AMY define CuAAC before you use it.
+The Lavis lab makes these probes freely available, and has offered to provide us with alkynylated versions for easy conjugation via CuAAC (\ref{figure:CblConstructs}A, see Lavis support letter).
 Probes containing these new fluorophores will be evaluated as previously described, with the addition of a test for fluorophore photostability.
 Stability under extended illumination will be important for single-molecule localization (Aim 2), thus these experiments will give an additional point of comparison for probe quality.
-
-% AMY Somewhere you should probably say that molecules will be purified by HPLC and structurally verified by small molecule NMR and mass spec.
 
 \textbf{Summary and alternate approaches:}\\
 To identify probes with improved quenching and fluorescence turn-on, linker, attachment point, and fluorophore will be varied. With four linkers, two attachment points, and seven fluorophores, 56 constructs are possible. Though not all of these will be evaluated, simple chemistries involving amide bond couplings and click chemistry will enable us to sample a large amount of this structure space in a rapid fashion. If $\upbeta$-hairpin zippers do not yield improvements in quenching, other linkers with varying rigidity and lengths will be explored\cite{LeeDesignSynthesisCharacterization2009}, specifically those that promote direct contact between the fluorophore and the cobalamin. Also, it should be noted that new cobalamin constructs are not necessary for the success of aims 2 or 3. It is likely that all three aims will be pursued in parallel, with new discoveries in each informing project direction.
 
-%\textbf{\underline{Aim 2.} Adapt Riboglow for single-molecule imaging.}\\
 \subsubsection*{\underline{Aim 2.} Adapt Riboglow for single-molecule imaging.}
 Visualization of the lifecycle of single RNA transcripts as they move throughout the cell remains a holy grail of RNA imaging.\cite{LiCentraldogmasinglemolecule2011} Though several recent studies have demonstrated visualization of individual mRNA transcripts, all have required the use of at least 24 repeats of the MS2-binding stem loop\cite{KatzMappingtranslationhotspots2016,FuscoSinglemRNAMolecules2003,YamagishiSinglemoleculeimagingvactin2009,HalsteadRNAbiosensorimaging2015}.
 When these loops (which each bind two MS2 proteins) are fully populated, a complex of more than 2,000 kilodaltons is produced.
