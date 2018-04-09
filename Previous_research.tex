@@ -1,118 +1,4 @@
-
-
-\documentclass[11pt]{article}
-
-\title{ }
-
-\usepackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
-\usepackage{helvet}
-\usepackage{url} % hypderref?
-\usepackage{graphicx}
-\graphicspath{{figures/}} % The figures are in a figures/ subdirectory.
-\renewcommand{\familydefault}{\sfdefault}
-\pagestyle{empty}
-%\pagestyle{plain}
-
-% Fancy page-width tables
-\usepackage{tabularx}
-
-% Use a package for framed boxes
-\usepackage{mdframed}
-
-\usepackage[T1]{fontenc}
-\usepackage{amssymb}
-
-
-\usepackage{setspace}
-\usepackage{microtype}
-
-\usepackage{amsfonts}
-\usepackage{amsmath}
-
-\usepackage{floatrow}
-
-\usepackage[normalem]{ulem} % for nci.bst
-
-\usepackage{sidecap}
-\usepackage[abs]{overpic}
-\usepackage{wrapfig}
-
-
-\usepackage{hyperref}
-\hypersetup{colorlinks=true, urlcolor=black, citecolor=black, linkcolor=black}
-
-\usepackage[numbers,sort&compress]{natbib} %comment on first run?
-
-\usepackage{multibib}
-%\newcites{full,sampl}{A,B}
-\newcites{sampl}{Full List of SAMPL References}
-%\newbibliography{full}
-
-%\usepackage[round,authoryear]{natbib}
-%\usepackage{cite}
-%\setlength{\bibsep}{0.00in}
-
-
-\newcommand{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
-
-\newcommand{\ac}[1]{{\sc \lowercase{#1}}}
-
-\renewcommand{\baselinestretch}{.93}
-%\renewcommand{\baselinestretch}{.90}
-\usepackage{wrapfig}
-
-
-
-
-\graphicspath{{figs/}}
-
-\makeatletter
-
-\newcommand{\captionfonts}{\footnotesize}
-
-\makeatletter  % Allow the use of @ in command names
-\long\def\@makecaption#1#2{%
-  \vskip\abovecaptionskip
-  \sbox\@tempboxa{{\captionfonts #1: #2}}%
-  \ifdim \wd\@tempboxa >\hsize
-    {\captionfonts #1. #2\par}
-  \else
-    \hbox to\hsize{\hfil\box\@tempboxa\hfil}%
-  \fi
-  \vskip\belowcaptionskip}
-\makeatother
-
-\renewcommand{\figurename}{{\bf Figure}}
-
-% Page numbering.
-%\pagestyle{plain}
-%\pagenumbering{arabic}
-
-\setlength{\abovecaptionskip}{-5pt}
-
-\makeatother
-
-\renewcommand{\refname}{Bibliography and References Cited}
-
-\setlength{\parindent}{0pt} % Don't indent first line
-%\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex} % Add some space between paragraphs
-\setlength{\parskip}{0.8ex} % Add some space between paragraphs
-
-%%%%%%%%%%%%%%%%%%%%% c-bun's additions
-\newcommand{\comment}[1]{\textit{\textcolor{red}{#1}}}
-\usepackage{booktabs}
-\usepackage{upgreek} % allows nonitalic greek letters
-\usepackage{titlesec}
-\titlespacing\subsubsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt} % allows use of sections without all that extra spacing.
-\renewcommand{\tablename}{{\bf Table}}
-%%%%%%%%%%%%%%%%%%%%% end c-bun's additions
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% FROM THE WEBSITE:
-% Are the applicant’s academic record and research experience of high quality?
-% Does the applicant have the potential to develop into an independent and productive researcher?
-% Does the applicant demonstrate commitment to a research career in the future?
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{F32}
 
 \begin{document}
 \begin{centering}
@@ -126,7 +12,7 @@
 \begin{wrapfigure}{r}{8cm}
 %\vspace{-0.2in}
 \begin{centering}
-\includegraphics[width=\textwidth]{figures/chemilum.pdf}
+\includegraphics[width=\textwidth]{figures/previous_research/chemilum.pdf}
 
 \end{centering}
 \footnotesize
@@ -147,7 +33,7 @@ Genetically-encoded optical reporters have revolutionized our understanding of b
 \begin{wrapfigure}{l}{8cm}
 %\vspace{-0.2in}
 \begin{centering}
-\includegraphics[width=\textwidth]{figures/algorithmv2.pdf}
+\includegraphics[width=\textwidth]{figures/previous_research/algorithmv2.pdf}
 \end{centering}
 \footnotesize
 \caption{\label{figure:algorithm}
@@ -166,7 +52,7 @@ My strategy for mutually selective probes relied on synthesizing small molecule 
 \begin{wrapfigure}{R}{7cm}
 %\vspace{-0.2in}
 \begin{centering}
-\includegraphics[width=\textwidth]{figures/mouse1pc.pdf}
+\includegraphics[width=\textwidth]{figures/previous_research/mouse1pc.pdf}
 
 \end{centering}
 \footnotesize
@@ -185,7 +71,7 @@ Next, we sought to identify luciferase mutants that selectively utilized our luc
 \begin{wrapfigure}{L}{10cm}
 %\vspace{-0.2in}
 \begin{centering}
-\includegraphics[width=\textwidth]{figures/mouse_unmixing.pdf}
+\includegraphics[width=\textwidth]{figures/previous_research/mouse_unmixing.pdf}
 
 \end{centering}
 \footnotesize
