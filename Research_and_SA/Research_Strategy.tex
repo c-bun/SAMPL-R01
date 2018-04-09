@@ -6,8 +6,7 @@
 % Is the research project consistent with the applicant’s stage of research development?
 % Is the proposed time frame feasible to accomplish the proposed training?
 
-%\textbf{SIGNIFICANCE}\\
-\subsubsection*{SIGNIFICANCE}
+\subsubsection*{SIGNIFICANCE AND INNOVATION}
 RNA lies at the center of cellular function. Its most appreciated role is to carry protein blueprints to the ribosome for manufacture.
 Only recently have researchers begun to appreciate its myriad of other functions, many of which also lie at the center of important cellular processes and are implicated in a variety of disease states \cite{CechNoncodingRNARevolution2014,DellaRagioneNoncodingRNAschromatin2014,AnastasiadouNoncodingRNAnetworks2018}.
 Long noncoding RNA (lncRNA) comprise one such important class of RNA that does not participate in the central dogma \cite{RinnGenomeRegulationLong2012}. Alarmingly, the human genome encodes for as many lncRNA as proteins \cite{Rinntranscriptionalactivityhuman2003,RinnGenomeRegulationLong2012}.
@@ -56,8 +55,8 @@ Though promising, the initial iteration of Riboglow has significant room for imp
 \subsubsection*{APPROACH \underline{Aim 1.} Synthesize improved Riboglow probes.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Cbl constructs
-\begin{wrapfigure}{r}{10cm}
-\vspace{-0.13in} % this is the happy medium between top of fig and bottom...
+\begin{wrapfigure}[34]{r}{10cm}
+\vspace{-0.15in} % this is the happy medium between top of fig and bottom...
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/aim1v5.pdf}
 \end{centering}
@@ -72,7 +71,7 @@ The main drawback of Riboglow is the poor turn-on that is observed upon probe bi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Zipper Linkers
-\begin{wraptable}{L}{9cm}
+\begin{wraptable}[13]{L}{9cm}
 \vspace{-0.13in} % this is the happy medium between top of fig and bottom...
 \caption{Tryptophan zippers of varying stability will be tested to maximize fluorescence quenching. Azidoalanine (Az) will be added to the C-terminus to enable easy fluorophore conjugation. Values were obtained from ref.\ \cite{FesinmeyerEnhancedHairpinStability2004} and reflect measurements for the peptide without the C-terminal azidoalanine.}\label{table:ZipperLinkers}
 \begin{tabular}{c | c >{\centering\arraybackslash}m{1.5cm} } % funky greater than thing centers wrapped text in the cell
@@ -117,7 +116,9 @@ It is possible that incorporation of a ligand at this site on the metal center w
 If this is the case, these probes could serve as excellent starting points for directed evolution of orthogonal aptamer-probe pairs (see Aim 3).
 Additionally, perturbations to the native binding mode of cobalamin could reduce off-target association with native B\textsubscript{12} machinery \cite{PathareSynthesisCobalaminBiotin1996}, further reducing fluorescence background.
 
-\begin{wraptable}{R}{10cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% fluorophores
+\begin{wraptable}[15]{R}{10cm}
 \vspace{-0.13in} % this is the happy medium between top of fig and bottom...
 \caption{
 A range of fluorophores will be explored for optimal quenching and signal induction. Cy5 and the ATTO series were utilized in the first generation Riboglow system, and will also be used here with new linkers and Cbl attachment points. Photophysical values were obtained from Atto tec and refs.\ \cite{BraselmannDevelopmentriboswitchbasedplatform2017} and  \cite{Grimmgeneralmethodfinetune2017}.
@@ -136,6 +137,7 @@ ATTO 633 & 629 & 657 & 130,000 & 0.6\\  \hline
 \bottomrule
 \end{tabular}
 \end{wraptable}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The final variable in the molecular structure of the Riboglow probe is the fluorophore itself. The ideal probe would minimize cellular autofluorescence through the use of a red fluorophore with a high extinction coefficient. The Janelia Fluor series of dyes is well suited for this application \cite{Grimmgeneralmethodfinetune2017,Grimmgeneralmethodimprove2015}. With minor modifications to the rhodamine scaffold, Janelia Fluors have varying excitation and emission spectra, and excellent photophysical properties.
 Table \ref{fluorophores} includes a subset of the probes that will be explored.
@@ -160,15 +162,15 @@ With the wide variety of new probe constructs developed to optimize quenching (A
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Aim 2
-\begin{wrapfigure}{R}{10cm}
-\vspace{-0.13in} % this is the happy medium between top of fig and bottom...
+\begin{wrapfigure}[25]{R}{10cm}
+\vspace{-0.24in} % this is the happy medium between top of fig and bottom...
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/aim2v2.pdf}
 
 \end{centering}
 \footnotesize
 \caption{\label{figure:aim2}
-A) Riboswitch sites for mutation (colored red) will be targeted based on potential contact with the linker and fluorophore, while the cobalamin (blue) binding site will be retained. (PDB: 4FRN, ref.\ \cite{JohnsonJrB12cofactorsdirectly2012)} B) RNA sequences will be screened in mammalian cells for brightness relative to a fluorescent protein control.
+A) Riboswitch sites for mutation (colored red) will be targeted based on potential contact with the linker and fluorophore, while the cobalamin (blue) binding site will be retained. (PDB: 4FRN, ref.\ \cite{JohnsonJrB12cofactorsdirectly2012} B) RNA sequences will be screened in mammalian cells for brightness relative to a fluorescent protein control.
 }
 \end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -205,7 +207,7 @@ If single-molecule resolution is not observed in the library hits, additional ri
 % TODO include precedent:  \cite{HocineSinglemoleculeanalysisgene2013}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Aim 3: Multicomponent imaging
-\begin{wrapfigure}[23]{L}{10cm}
+\begin{wrapfigure}[25]{L}{10cm}
   \vspace{-0.13in} % this is the happy medium between top of fig and bottom...
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/aim3v2.pdf}
