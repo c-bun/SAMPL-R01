@@ -70,7 +70,7 @@ The main drawback of Riboglow is the poor turn-on that is observed upon probe bi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Zipper Linkers
 \begin{wraptable}{L}{9cm}
-\caption{Tryptophan zippers of varying stability will be tested to maximize fluorescence quenching. Azidoalanine (Az) will be added to the c-terminus to enable easy fluorophore conjugation. Values were obtained from Ref. \cite{FesinmeyerEnhancedHairpinStability2004} and reflect measurements for the peptide without the c-terminal azidoalanine.}\label{table:ZipperLinkers}
+\caption{Tryptophan zippers of varying stability will be tested to maximize fluorescence quenching. Azidoalanine (Az) will be added to the C-terminus to enable easy fluorophore conjugation. Values were obtained from ref.\ \cite{FesinmeyerEnhancedHairpinStability2004} and reflect measurements for the peptide without the C-terminal azidoalanine.}\label{table:ZipperLinkers}
 \begin{tabular}{c | c >{\centering\arraybackslash}m{1.5cm} } % funky greater than thing centers wrapped text in the cell
 \toprule
 Sequence & Tm ($^\circ$C) &  \% folded (25 $^\circ$C) \\\toprule
@@ -89,7 +89,7 @@ To strike this balance, I will use a synthetic $\upbeta$-hairpin as the linker b
 Such a linker would hold the molecules close in solution, but would be linearized upon binding to the riboswitch.
 A number of such $\upbeta$-hairpin have been developed, and are referred to as tryptophan zippers (trpzip)\cite{CochranTryptophanzippersStable2001}.
 These motifs are as small as twelve amino acids and some are stable to denaturation up to 85 $^\circ$C (Table \ref{table:ZipperLinkers}).
-In the unbound state, such a linker would hold the quencher and fluorophore in close proximity (due to the short distance between the N and C termini of the peptide, Figure \ref{figure:CblConstructs}A).
+In the unbound state, such a linker would hold the quencher and fluorophore in close proximity (due to the short distance between the N and C-termini of the peptide, Figure \ref{figure:CblConstructs}A).
 When the cobalamin is bound by the riboswitch, steric occlusion would force the $\upbeta$-hairpin turn to unfold to place the fluorophore-quencher pair at a larger distance.
 A wide range of tryptophan zippers have been developed with a varitey of structures and stabilities, enabling easy synthesis of a range of different linkers via solid phase peptide synthesis\cite{CochranTryptophanzippersStable2001,KierProbingLowerSize2008,AndersenMinimizationOptimizationDesigned2006,FesinmeyerEnhancedHairpinStability2004} (see Equipment document).
 Cobalamin would then be coupled to the linker via amide coupling and alkynyl fluorphores would be appended via copper catalyzed azide-alkyne cycloaddition (CuAAC)\cite{KolbHartmuthC.ClickChemistryDiverse2001,PattersonFindingRightBioorthogonal2014} (Figure \ref{figure:CblConstructs}A).
@@ -98,7 +98,7 @@ A starting set if linkers are listed in Table \ref{table:ZipperLinkers}.
 To enable modularity, an azidoalanine amino acid will be appended to the C-termini of all linkers during peptide synthesis.
 The polyglycine linker will be used as a negative control for a linker with little secondary structure, but identical length.
 If the fold proves to be too stable (dequenching is not observed), the amino acids of the peptide linker will be varied to tune the melting temperature.
-Or, if adequate quenching is not observed, the relative positions of the N and C termini will be adjusted based upon structural data available on these $\upbeta$-hairpin, available in the Protein Data Bank (PDB).
+Or, if adequate quenching is not observed, the relative positions of the N and C-termini will be adjusted based upon structural data available on these $\upbeta$-hairpin, available in the Protein Data Bank (PDB).
 Each new construct will be tested for their ability to quench fluorescence in vitro by comparing the fluorescence of the construct with that of the free fluorophore in solution. Fluorescence signal in the presence of the Riboglow riboswitch will also be measured to calculate fluorescence turn-on.
 
 Another underexplored variable of the original Riboglow probes is the linker attachment point.
@@ -114,7 +114,7 @@ If this is the case, these probes could serve as excellent starting points for d
 Additionally, perturbations to the native binding mode of cobalamin could reduce off-target association with native B\textsubscript{12} machinery\cite{PathareSynthesisCobalaminBiotin1996}, further reducing fluorescence background.
 
 \begin{wraptable}{R}{10cm}
-\caption{A range of fluorophores will be explored for optimal quenching and signal induction. Cy5 and the ATTO series were utilized in the first generation Riboglow system, and will also be used here with new linkers and Cbl attachment points. Photophysical values were obtained from Atto tec and refs. \cite{BraselmannDevelopmentriboswitchbasedplatform2017} and \cite{Grimmgeneralmethodfinetune2017}}\label{fluorophores}
+\caption{A range of fluorophores will be explored for optimal quenching and signal induction. Cy5 and the ATTO series were utilized in the first generation Riboglow system, and will also be used here with new linkers and Cbl attachment points. Photophysical values were obtained from Atto tec and refs.\ \cite{BraselmannDevelopmentriboswitchbasedplatform2017} and \cite{Grimmgeneralmethodfinetune2017}}\label{fluorophores}
 \begin{tabular}{c|cccc}
   \toprule
  Dye &  $\lambda$\textsubscript{ex} (nm) &  $\lambda$\textsubscript{em} (nm) &  $\epsilon$ (M\textsuperscript{-1}cm\textsuperscript{-1}) &  $\phi$ \\\toprule
@@ -141,13 +141,12 @@ Stability under extended illumination will be important for single-molecule loca
 To identify probes with improved quenching and fluorescence turn-on, linker, attachment point, and fluorophore will be varied. With four linkers, two attachment points, and seven fluorophores, 56 constructs are possible. Though not all of these will be evaluated, simple chemistries involving amide bond couplings and click chemistry will enable us to sample a large amount of this structure space in a rapid fashion. If $\upbeta$-hairpin zippers do not yield improvements in quenching, other linkers with varying rigidity and lengths will be explored\cite{LeeDesignSynthesisCharacterization2009}, specifically those that promote direct contact between the fluorophore and the cobalamin. Also, it should be noted that new cobalamin constructs are not necessary for the success of aims 2 or 3. It is likely that all three aims will be pursued in parallel, with new discoveries in each informing project direction.
 
 \subsubsection*{\underline{Aim 2.} Adapt Riboglow for single-molecule imaging.}
-Visualization of the lifecycle of single RNA transcripts as they move throughout the cell remains a holy grail of RNA imaging.\cite{LiCentraldogmasinglemolecule2011} Though several recent studies have demonstrated visualization of individual mRNA transcripts, all have required the use of at least 24 repeats of the MS2-binding stem loop\cite{KatzMappingtranslationhotspots2016,FuscoSinglemRNAMolecules2003,YamagishiSinglemoleculeimagingvactin2009,HalsteadRNAbiosensorimaging2015}.
+Visualization of the lifecycle of single RNA transcripts as they move throughout the cell remains a holy grail of RNA imaging.\cite{LiCentraldogmasinglemolecule2011}
+This is an entirely feasible goal due to the fact that so few copies of an individual RNA transcript exist in a cell at any given time (the samples are by definition sparsely populated)\cite{CabiliLocalizationabundanceanalysis2015,LiCentraldogmasinglemolecule2011,AndreckaSinglemoleculetrackingmRNA2008}.
+Though several recent studies have demonstrated visualization of individual mRNA transcripts, all have required the use of at least 24 repeats of the MS2-binding stem loop\cite{KatzMappingtranslationhotspots2016,FuscoSinglemRNAMolecules2003,YamagishiSinglemoleculeimagingvactin2009,HalsteadRNAbiosensorimaging2015}.
 When these loops (which each bind two MS2 proteins) are fully populated, a complex of more than 2,000 kilodaltons is produced.
 Such a structure is several times larger than most mRNA, giving it the potential to be highly perturbing to normal mRNA behavior.
 Riboglow has the potential to reduce the size of the fluorescent probe by 10--100-fold (relative to the MS2 system), however, high fluorescence background and poor signal induction precluded these studies\cite{BraselmannDevelopmentriboswitchbasedplatform2017}.
-
-\comment{I still need to work in here some statements about RNA imaging experiments being inherently ``sparse labeling.''}
-% AMY You probably want to make it clear that visualizing single molecules of RNA is feasible if the fluorophores themselves are bright enough because there aren't that many copies of the RNA at any given time (might be good to find a reference for this.  I don't know one off the top of my head) - in other words - this is a sparsely populated sample.
 
 With the wide variety of new probe constructs developed to optimize quenching (Aim 1), changes will be made to the sequence of the cobalamin riboswitch with the goal of increasing fluorescence turn-on. \textit{A directed evolution screen for fluorescence brightness will identify optimal riboswitch sequences that promote fluorescence signal induction}.
 
@@ -162,46 +161,42 @@ With the wide variety of new probe constructs developed to optimize quenching (A
 \end{centering}
 \footnotesize
 \caption{\label{figure:aim2}
-A) Riboswitch sites for mutation will be targeted based on potential contact with the linker and fluorophore. PDB: 4FRN\cite{JohnsonJrB12cofactorsdirectly2012} B) RNA sequences will be screened for brightness relative to a fluorescent protein control.
+A) Riboswitch sites for mutation (colored red) will be targeted based on potential contact with the linker and fluorophore, while the cobalamin (blue) binding site will be retained. (PDB: 4FRN, ref.\ \cite{JohnsonJrB12cofactorsdirectly2012)} B) RNA sequences will be screened in mammalian cells for brightness relative to a fluorescent protein control.
 }
 \end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 First, a library will be designed that varies the environment surrounding the binding pocket of the cobalamin riboswitch (Figure \ref{figure:aim2}A). Through the guidance of Robert Batey (see Batey support letter), sites will be chosen to retain binding of the cobalamin, yet maximize the distance between the quencher and the fluorophore upon binding\cite{JohnsonJrB12cofactorsdirectly2012}.
-Next a screen for fluorescence intensity will be used to select bright riboswitch sequences.
+Next a screen for fluorescence intensity in mammalian cells will be used to select bright riboswitch sequences.
+A cellular screen for brightness is crucial because it ensures that the riboswitch aptamer maintains robust folding in a complex environment.
 The Palmer lab is a leader in technologies for tool development in mammalian cells\cite{FiedlerDropletMicrofluidicFlow2017,DeanHighSpeedMultiparameterPhotophysical2015}.
-This expertise will be leveraged for screening libraries of cobalamin riboswitches (Figure \ref{figure:aim2}B). Libraries of transcripts will be transduced into mammalian cells, the probe of interest will be administered, and cells will be sorted via flow cytometry.
-% AMY Clarify that libraries will be virally transduced using Lentivirus at a low multiplicity of infection to ensure incorporation of a single library member per cell, a technique widely used in the Palmer Lab.
-Cells that show elevated brightness relative to a fluorescent protein expression control will be sorted.
-% AMY clarify: "fluorescence activated cell sorting, FACS" and make sure that our Cell sorting facility is part of your Facilities and Equipment sections.  If it's not there let me know and I will get the info for you.
-In this way, libraries of up to one million members will be screened. Bright variants will be collected, cultured, and resubjected to sorting until only highly fluorescent cells remain. Sequences will be evaluated through high-throughput sequencing.
-% AMY Probably worth emphasizing that the advantage of a cellular screen like this is that you ensure the riboswitch aptamer maintains robust folding in mammalian cells.
+This expertise will be leveraged for screening libraries of cobalamin riboswitches (Figure \ref{figure:aim2}B). Libraries of transcripts will first be transduced into mammalian cells using lentivirus at a low multiplicity of infection to ensure incorporation of a single library member per cell (a technique widely used in the Palmer lab).
+The probe of interest will be administered, and cells will be sorted via fluorescence activated cell sorting (FACS, see Equipment document).
+Cells that show elevated brightness relative to a fluorescent protein expression control will be binned.
+In this way, libraries of up to one million members will be screened.
+I will collect, culture, and resubject bright variants to sorting until only highly fluorescent cells remain. Sequences will be evaluated through high-throughput sequencing.
 
 New sequences identified through this screen will undergo rigorous characterization of their biophysical and photophysical properties \textit{in vitro}. It will be important to characterize the extinction coefficient of each complex upon binding the RNA tag, as well as their quantum yields and photostability. The binding affinity for each probe-RNA combination will also be measured via isothermal titration calorimetry.
-% AMY Clarify that these are experiments readily carried out in the Palmer Lab (you can reference a few of our papers).
-% AMY Regarding ITC, clarify that your goal is to ensure that the evolved aptamer / probe systems retain Kd values in the nM range.
-Such a value is important because it informs the probe dosage that will be necessary for imaging (and lower probe dosages will contribute less fluorescence background).
+I will aim to retain K\textsubscript{D} values in the nanomolar range (the native riboswitch binds cobalamin at K\textsubscript{D} = 37 nM).
+Such a value is important because it informs the probe dosage that will be necessary for imaging (and lower probe dosages will contribute less fluorescence background). Experiments to obtain these values are readily carried out in the Palmer Lab \cite{ParkQuantitativeMeasurementCa22014,BraselmannDevelopmentriboswitchbasedplatform2017}.
 
 Candidate probes that exhibit low background fluorescence, high signal induction, and high RNA affinity will be tested to determine the absolute level of turn-on fluorescence, and the minimum number of fluorophores that can be localized. To do this, beta-actin mRNA will be tagged with one, two, or four repeats of the mutant riboswitch of interest in U2-OS cells through transient transfection. The cells will be imaged under conditions analogous to previous studies\cite{KatzMappingtranslationhotspots2016} using a TIRF microscope (see Equipment document). If puncta that appear to be single molecules are observed under these conditions, probe localization will be verified via fluorescence in situ hybridization (FISH) following cell fixation. If puncta are not visible in the initial TIRF images, cells will be treated with arsenite to induce the formation of stress granules (SGs) that also contain the protein G3BP1\cite{ZurlaCharacterizingmRNAInteractions2011,JainATPaseModulatedStressGranules2016,NellesProgrammableRNATracking2016}.
 G3BP1 can be tagged with the Halo-tag, and subsequently labeled with an orthogonal fluorophore to evaluate co-localization. A check of direct mRNA location can then be carried out with FISH.
 This is a technique that the Palmer lab has previously used successfully to test Riboglow probes\cite{BraselmannDevelopmentriboswitchbasedplatform2017}.
 
-To quantify our ability to resolve single mRNA molecules, we will utilize single-molecule FISH (smFISH) imaging to correlate RNA count with Riboglow signal\cite{MuellerFISHquantautomaticcounting2013}. This same method was recently used to quantify the sensitivity of an improved MS2 system\cite{TutucciimprovedMS2system2018}. If initial studies prove successful, we will attempt to image lncRNA \textit{SNHG5} in the cytosol of cells, coupled with smFISH for verification.
-% AMY We should clarify the type of cells here.
+To quantify our ability to resolve single mRNA molecules, we will utilize single-molecule FISH (smFISH) imaging to correlate RNA count with Riboglow signal\cite{MuellerFISHquantautomaticcounting2013}. This same method was recently used to quantify the sensitivity of an improved MS2 system\cite{TutucciimprovedMS2system2018}. If initial studies prove successful, we will attempt to image lncRNA \textit{SNHG5} in the cytosol of colorectal carcinoma (HCT116) cells, coupled with smFISH for verification\cite{DamasSNHG5promotescolorectal2016}.
 Studies involving imaging of lncRNA will be carried out under the supervision of Professor John Rinn, an expert in lncRNA (see Rinn support letter).
 
 \textbf{Summary and alternate approaches:}\\
-To attain single-molecule resolution with Riboglow, the probes synthesized in Aim 1 will be screened with libraries of riboswitch mutants \textit{in cellulo}. Cells containing bright mutants will be sorted via FACS and analyzed. Library hits will be characterized \textit{in vitro}, and tested via established assays for single-molecule localization \textit{in cellulo}. Probes that are successful in our model systems will be used to image long noncoding RNA under the supervision of Professor John Rinn. If single-molecule resolution is not observed in the library hits, additional riboswitches (over the four repeats already planned) will be added to concentrate fluorescent signal. Even if 24 repeats are required, the construct will still be less than half the size of the MS2 system.
-% AMY As an alternative approach you could include a statement like this: "While screening for high fluorescence in cells via FACS is the most efficient way to ensure robust turn-on, an alternative approach could involve alternating in vitro selection (SELEX) to identify RNA aptamers thattightly bind the modified probes (see aim 3 for experimental details) and in cellulo selection for fluorescence via FACS.
+To attain single-molecule resolution with Riboglow, the probes synthesized in Aim 1 will be screened with libraries of riboswitch mutants \textit{in cellulo}. Cells containing bright mutants will be sorted via FACS and analyzed. Library hits will be characterized \textit{in vitro}, and tested via established assays for single-molecule localization \textit{in cellulo}. Probes that are successful in our model systems will be used to image long noncoding RNA under the supervision of Professor John Rinn.
+While screening for high fluorescence in cells via FACS is the most efficient way to ensure robust turn-on, an alternative approach could involve alternating a screen for binding via \textit{in vitro} selection (see aim 3 for experimental detail) and in cellulo selection for fluorescence via FACS.
+If single-molecule resolution is not observed in the library hits, additional riboswitches (over the four repeats already planned) will be added to concentrate fluorescent signal. Even if 24 repeats are required, the construct will still be less than half the size of the MS2 system.
 
-%\textbf{\underline{Aim 3.} Develop mutually orthogonal Riboglow probes for multicomponent imaging.}\\
 \subsubsection*{\underline{Aim 3.} Develop mutually orthogonal Riboglow probes for multicomponent imaging.}
 % TODO include precedent: \cite{HocineSinglemoleculeanalysisgene2013}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Aim 3: Multicomponent imaging
-%\begin{wrapfigure}[25]{l}{10cm}
 \begin{wrapfigure}{L}{10cm}
-%\vspace{-0.2in}
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/aim3v2.pdf}
 \end{centering}
@@ -212,17 +207,12 @@ A) SELEX will be used to screen for riboswitches that bind each cobalamin in a m
 \end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\comment{This is where I think the proposal breaks down a little bit. It's hard to discuss multicomponent imaging in a clear way, and even harder to design an experiment to validate the tool. Let me know what you think.}
-
-The ability to track multiple RNA transcripts simultaneously would enable study of the interactions of RNA as they move throughout the cell. Upregulation of \textit{SNHG5} in colorectal cancer has been implicated in stabilization of a variety of mRNA in the cytoplasm\cite{DamasSNHG5promotescolorectal2016}. Direct hybridization of this lncRNA with mRNA protects transcipts from degradation, and enables translation, promoting disease states. Despite these implications, these interactions have never been visualized in living cells, and thus the functions of \textit{SNHG5} and other lncRNA remain unknown. Localization of these lncRNA and their mRNA targets in living cells would shed light on these mysterious processes.
-% AMY I would emphasize dynamics...when, where and for how long...spatiotemporal dynamics...
+The ability to track multiple RNA transcripts simultaneously would enable study of the interactions of RNA as they move throughout the cell. Upregulation of \textit{SNHG5} in colorectal cancer has been implicated in stabilization of a variety of mRNA in the cytoplasm\cite{DamasSNHG5promotescolorectal2016}. Direct hybridization of this lncRNA with mRNA protects transcipts from degradation, and enables translation, promoting disease states. Despite these implications, the spatiotemporal dynamics of lncRNA and their interacting partners have never been visualized in living cells, and thus their functions remain unknown. Localization of these lncRNA and their mRNA targets would shed light on these ``dark'' processes.
 
 The modularity of the Riboglow platform is well suited to enable such an experiment, however mutually orthogonal riboswitch-probe pairs must first be identified. \textit{In vitro selection will enable identification of mutually-selective riboswitch-probe pairs for multicomponent RNA imaging}(Figure \ref{figure:aim3}B).
-%\textit{Probes will be spectrally distinguished through the use of distinct fluorophores, and different riboswitch sequences will be used to bind each structurally unique probe in a mutually-exclusive manner (Figure \ref{figure:aim3}B)}.
 
 Fortunately, screening for substrate selectivity is well-precedented in RNA engineering through systematic evolution of ligands by exponential enrichment (SELEX)\cite{MairalAptamersmoleculartools2008,ChoApplicationsAptamersSensors2009}.
 In fact, \textit{de novo} aptamers have already been developed for cobalamin and a few of its analogs via SELEX\cite{LorschvitroselectionRNA1994}. This important precedent shows that even small changes to the structure of the cobalamin can be distinguished by engineered RNA indicating that no additional changes will need to be made to the cobalamin structure apart from those constructs already proposed above. However, to improve our chances at identifying mutually-orthogonal probes, we will begin by screening probes that contain each of the two linker attachment points (Aim 1) to maximize structural differences at the cobalamin center.
-% AMY I think more chemical detail is warranted.  Can you include structures of the actual Cbl variants you hope to create?
 
 Importantly, our selection experiments will not start from a completely randomized sequence of nucleic acids. It will be crucial to retain the original fold (and thus \textit{in cellulo} stability) of the native riboswitch. RNA biosensors developed in this way are known to have increased stability relative to aptamers selected \textit{de novo}\cite{PorterRecurrentRNAmotifs2017}.
 Additionally, brighter probe sequences identified in Aim 2 will be retained to preserve the bound conformation of the linker and fluorophore as much as possible.
@@ -238,11 +228,9 @@ Riboswitches will be deep sequenced to identify library convergence and optimal 
 
 Mutually-orthogonal probes identified through the \textit{in vitro} selection will be verified in a similar fashion as described in Aim 2. Probe extinction coefficient, quantum yield, photostability, and binding affinity will be characterized \textit{in vitro}. Probes will also be independently verified \textit{in cellulo} via the $\upbeta$-actin fusion assay described in Aim 2 to ensure that the sensitivity of each probe was retained.
 
-If a robust pair of Riboglow probes is identified, a lncRNA will be imaged interacting with a putative binding partner mRNA. \textit{SNGH5} has been shown to promote colorectal cancer survival through stabilization of mRNA that promote tumor growth\cite{DamasSNHG5promotescolorectal2016}. Among these mRNA is the \textit{SPATS2} gene, which has a base pairing interaction in its 3'-UTR with \textit{SNGH5} exon 1. Matched Riboglow probes will be used to image this interaction.
+Once a robust pair of Riboglow probes is identified, a lncRNA will be imaged interacting with a putative binding partner mRNA. \textit{SNGH5} has been shown to promote colorectal cancer survival through stabilization of mRNA that promote tumor growth\cite{DamasSNHG5promotescolorectal2016}. Among these mRNA is the \textit{SPATS2} gene, which has a base pairing interaction in its 3'-UTR with \textit{SNGH5} exon 1. Matched Riboglow probes will be used to image this interaction.
 % AMY I think this can be developed a bit more deeply to lay out exactly what experiment(s) you would conduct and what specific question you would be trying to address.  I can spend some time mid-day tomorrow doing a little research and try to offer some suggestions - but want to get this back to you for now.
 An additional check for localizaton will be made through fluorescent tagging of \textit{STAU1}, a protein that binds to the 3'-UTR of mRNA and mediates their degradation\cite{ParkEonyoungStaufenmediatedmRNA2013}. Single molecule FISH will provide a final check of probe selectivity.
-
-\comment{I'm making the assumption here that single-molecule imaging capability will be retained after SELEX, which I think is a bit of a jump. As a protein engineer, I've now convinced myself that I would develop the probes in the reverse order: SELEX first (which is like hitting the aptamer with a hammer) and then FACS screen second (which is more gentle). I have toyed with switching the aims, but I can't think of a nice, non single-molecule technique for evaluating the multicomponent probes (mostly because I'm still clueless about the literature). Thoughts?}
 % AMY I think the two screens are complementary and get at different functionalities.  I think it's wise to suggest that you can itterate the two approaches, but leave aim 2 more focused on the cell based screen and aim 3 more focused on the in vitro screen
 
 % TODO talk about checks for retained (single molecule) sensitivity here. if some sensitivity lost, can rescreen for brightness.
