@@ -12,7 +12,7 @@ RNA lies at the center of cellular function. Its most appreciated role is to car
 Only recently have researchers begun to appreciate its myriad of other functions, many of which also lie at the center of important cellular processes and are implicated in a variety of disease states \cite{CechNoncodingRNARevolution2014,DellaRagioneNoncodingRNAschromatin2014,AnastasiadouNoncodingRNAnetworks2018}.
 Long noncoding RNA (lncRNA) comprise one such important class of RNA that does not participate in the central dogma \cite{RinnGenomeRegulationLong2012}. Alarmingly, the human genome encodes for as many lncRNA as proteins \cite{Rinntranscriptionalactivityhuman2003,RinnGenomeRegulationLong2012}.
 These transcripts are typically greater than 200 bases, and participate in binding both proteins and nucleic acids, often both at the same time \cite{AnastasiadouNoncodingRNAnetworks2018,RinnGenomeRegulationLong2012}.
-In a striking example, \textit{SNGH5} is a long noncoding RNA (lncRNA) of largely unknown function, that that has been linked to cancer cell survival and metastasis in a diversity of different cancers from leukemias to melanoma \cite{TanakaRitsukoIntronicU50small2001,DamasSNHG5promotescolorectal2016,ZhaoLongnoncodingRNA2016,HeLncRNASNHG5regulates2017,YanSNHG5promotesproliferation2018,MalncRNASNHG5associated2018,ShenLncRNASNHG5miR26a2018,ZhengLongnoncodingRNA}.
+In a striking example, \textit{SNGH5} is a long noncoding RNA (lncRNA) of largely unknown function, that that has been linked to cancer cell survival and metastasis in a diversity of different cancers from leukemias to melanoma \cite{TanakaRitsukoIntronicU50small2001,DamasSNHG5promotescolorectal2016,ZhaoLongnoncodingRNA2016,HeLncRNASNHG5regulates2017,YanSNHG5promotesproliferation2018,MalncRNASNHG5associated2018,ShenLncRNASNHG5miR26a2018,ZhengLongnoncodingRNA2018}.
 This 2 kilobase transcript localizes to the cytoplasm and is upregulated in these disease states.
 \textit{SNGH5} has been implicated to interact with a variety of mRNAs to control expression, though little else is known about its role in normal cell function.
 Where and when does \textit{SNGH5}, and other similar lncRNA, interact with their mRNA targets?
@@ -20,10 +20,10 @@ How long do these interactions occur, and what other cellular machinery is prese
 Despite such burning questions in the field of lncRNA, a tool to directly image these species and their interacting partners in living cells has yet to be reported. \textit{Herein, I propose a robust imaging tool for multicomponent, single-molecule visualization of RNA dynamics in living cells.}
 
 \subsubsection*{BACKGROUND}
-Protein studies benefit from a large imaging toolkit that has been developed over the last 25 years. Genetically encodable fluorescent proteins are now ubiquitous for the study of the localization of any translated target in the cell. While fluorescent proteins are a mature, well-understood technology, tools for imaging the localization of individual RNA transcripts in living cells remain limited. The most popular systems to date include dye-binding aptamers (Spinach \cite{PaigeRNAMimicsGreen2011}, Broccoli \cite{FilonovBroccoliRapidSelection2014}, and Mango \cite{AutourFluorogenicRNAMango2018,DolgosheinaRNAMangoAptamerFluorophore2014}), and RNA-binding protein fusions (MS2-FPs) \cite{FuscoSinglemRNAMolecules2003,TutucciimprovedMS2system2018}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Riboglow
-\begin{wrapfigure}{R}{7.5cm}
+\begin{wrapfigure}[29]{R}{7.5cm}
+\vspace{-0.2in}
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/fig1v3.pdf}
 \end{centering}
@@ -33,6 +33,8 @@ A) Cobalamin acts as a quenching and localization moiety to guide a fluorescent 
 }
 \end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Protein studies benefit from a large imaging toolkit that has been developed over the last 25 years. Genetically encodable fluorescent proteins are now ubiquitous for the study of the localization of any translated target in the cell. While fluorescent proteins are a mature, well-understood technology, tools for imaging the localization of individual RNA transcripts in living cells remain limited. The most popular systems to date include dye-binding aptamers (Spinach \cite{PaigeRNAMimicsGreen2011}, Broccoli \cite{FilonovBroccoliRapidSelection2014}, and Mango \cite{AutourFluorogenicRNAMango2018,DolgosheinaRNAMangoAptamerFluorophore2014}), and RNA-binding protein fusions (MS2-FPs) \cite{FuscoSinglemRNAMolecules2003,TutucciimprovedMS2system2018}.
 
 The most analogous to fluoresecent proteins, dye-binding aptamers utilize exogenously administered dyes that give fluorescence induction upon binding their RNA partner  \cite{PaigeRNAMimicsGreen2011,FilonovBroccoliRapidSelection2014,AutourFluorogenicRNAMango2018,DolgosheinaRNAMangoAptamerFluorophore2014}.
 This sequence is encoded downstream of an RNA of interest to track its location in the cell. Though excellent binders for their dyes, the aptamers utilized by this technology are unstable in mammalian cells due to their nonnative structure \cite{EtzelSyntheticRiboswitchesPlug2017,IiiStructuralbasishighaffinity2017,WarnerStructuralbasisactivity2014,JengFluorophoreligandbinding2016}.
@@ -54,7 +56,8 @@ Though promising, the initial iteration of Riboglow has significant room for imp
 \subsubsection*{APPROACH \underline{Aim 1.} Synthesize improved Riboglow probes.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Cbl constructs
-\begin{wrapfigure}{R}{10cm}
+\begin{wrapfigure}{r}{10cm}
+\vspace{-0.13in} % this is the happy medium between top of fig and bottom...
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/aim1v5.pdf}
 \end{centering}
@@ -64,11 +67,13 @@ A) Synthesis of two structurally distinct attachment points for Riboglow probes.
 }
 \end{wrapfigure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 The main drawback of Riboglow is the poor turn-on that is observed upon probe binding. In this aim, I intend to leverage my background in synthetic chemistry to produce a panel of diverse probe structures that improve fluorescence quenching (and thus signal induction). In previous studies in collaboration with Professor Dorota Gryko (see Gryko letter of support) a small number of linkers and fluorophores were evaluated for quenching and fluorescence turn-on. Linker length and fluorophore wavelength were varied to gauge the quenching ability of cobalamin. Remarkably, some degree of quenching occurred in all of the constructs synthesized, regardless of the spectral overlap of the fluorophore and the cobalamin. However, most retained 10-20\% residual fluorescence, which increased background signal significantly. \textit{To optimize probe function, I will vary linker composition, attachment point, and pendant fluorophore with the goal of obtaining 98\% quenching in vitro.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Zipper Linkers
 \begin{wraptable}{L}{9cm}
+\vspace{-0.13in} % this is the happy medium between top of fig and bottom...
 \caption{Tryptophan zippers of varying stability will be tested to maximize fluorescence quenching. Azidoalanine (Az) will be added to the C-terminus to enable easy fluorophore conjugation. Values were obtained from ref.\ \cite{FesinmeyerEnhancedHairpinStability2004} and reflect measurements for the peptide without the C-terminal azidoalanine.}\label{table:ZipperLinkers}
 \begin{tabular}{c | c >{\centering\arraybackslash}m{1.5cm} } % funky greater than thing centers wrapped text in the cell
 \toprule
@@ -113,6 +118,7 @@ If this is the case, these probes could serve as excellent starting points for d
 Additionally, perturbations to the native binding mode of cobalamin could reduce off-target association with native B\textsubscript{12} machinery \cite{PathareSynthesisCobalaminBiotin1996}, further reducing fluorescence background.
 
 \begin{wraptable}{R}{10cm}
+\vspace{-0.13in} % this is the happy medium between top of fig and bottom...
 \caption{
 A range of fluorophores will be explored for optimal quenching and signal induction. Cy5 and the ATTO series were utilized in the first generation Riboglow system, and will also be used here with new linkers and Cbl attachment points. Photophysical values were obtained from Atto tec and refs.\ \cite{BraselmannDevelopmentriboswitchbasedplatform2017} and  \cite{Grimmgeneralmethodfinetune2017}.
 $\lambda$: wavelength, $\epsilon$: extinction coefficient, $\phi$: quantum yield.
@@ -154,9 +160,8 @@ With the wide variety of new probe constructs developed to optimize quenching (A
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Aim 2
-%\begin{wrapfigure}[25]{r}{8cm}
 \begin{wrapfigure}{R}{10cm}
-%\vspace{-0.2in}
+\vspace{-0.13in} % this is the happy medium between top of fig and bottom...
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/aim2v2.pdf}
 
@@ -200,7 +205,8 @@ If single-molecule resolution is not observed in the library hits, additional ri
 % TODO include precedent:  \cite{HocineSinglemoleculeanalysisgene2013}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Aim 3: Multicomponent imaging
-\begin{wrapfigure}{L}{10cm}
+\begin{wrapfigure}[23]{L}{10cm}
+  \vspace{-0.13in} % this is the happy medium between top of fig and bottom...
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/aim3v2.pdf}
 \end{centering}
