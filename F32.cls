@@ -5,9 +5,9 @@
 
 \LoadClass[11pt]{article}
 
-\RequirePackage{draftwatermark}  % delete this in your document!
-\SetWatermarkText{Sample}    % delete this in your document!
-\SetWatermarkLightness{0.9}  % delete this in your document!
+%\RequirePackage{draftwatermark}  % delete this in your document!
+%\SetWatermarkText{Sample}    % delete this in your document!
+%\SetWatermarkLightness{0.9}  % delete this in your document!
 
 \RequirePackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
 \RequirePackage{helvet}
