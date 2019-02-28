@@ -1,6 +1,8 @@
 ## Latex F32 Template by c-bun
 
-Had a fun time getting this together for the April 2018 deadline. Thought that someone else might be able to use it. This template was inspired/forked/heavily edited from the one over at [https://github.com/choderalab/SAMPL-R01](). Thanks for the insipration Chodera/Mobley Lab!
+UPDATE: I got funded! Grant No. GM131666-01.
+
+Had a fun time getting this together for the April 2018 deadline. Thought that someone else might be able to use it. This template was inspired/forked/heavily edited from the one over at [https://github.com/choderalab/SAMPL-R01](). Thanks for the inspiration Chodera/Mobley Lab!
 
 **Please do not use any of my text. This is a real grant that I submitted.**
 
